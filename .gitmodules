@@ -1,0 +1,9 @@
+[submodule "frontend/LunarEclipse-ChatService"]
+	path = frontend/LunarEclipse-ChatService
+	url = https://github.com/Equindar/LunarEclipse-ChatService.git
+[submodule "frontend/LunarEclipse-JSONServer"]
+	path = frontend/LunarEclipse-JSONServer
+	url = https://github.com/Equindar/LunarEclipse-JSONServer.git
+[submodule "LunarEclipse-NotificationService"]
+	path = backend/LunarEclipse-NotificationService
+	url = https://github.com/Equindar/LunarEclipse-NotificationService.git
