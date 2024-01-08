@@ -1,6 +1,6 @@
 name: User Story Template
 description: Create a user story
-title: ""
+title: "User-Story"
 labels: ["userstory"]
 projects: ["Equindar/LunarEclipse"]
 assignees:
