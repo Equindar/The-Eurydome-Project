@@ -2,7 +2,7 @@ name: Bug Report
 description: File a bug report
 title: "Bug Report"
 labels: ["bug", "triage"]
-projects: ["Equindar/project/2"]
+projects: ["Equindar/2"]
 body:
   - type: markdown
     attributes:
