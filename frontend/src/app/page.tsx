@@ -1,11 +1,10 @@
+import { Logger } from '@/lib/Logger';
 import Image from 'next/image';
-import Logger from '@/lib/Logger';
 
 export default function Page() {
-    const log = new Logger({ name: "LE-Logger"});
+    const log = new Logger({ name: 'LE-Logger' });
 
-    log.info("Info Message for testing.");
-    log.fatal(new Error("I am a pretty Error with a stacktrace."));
+    log.info('Info Message for testing.');
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">

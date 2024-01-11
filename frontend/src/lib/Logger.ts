@@ -1,7 +1,3 @@
-import { Logger as tslogLogger, ILogObj } from "tslog"
+import { ILogObj, Logger as tslogLogger } from 'tslog';
 
-class Logger extends tslogLogger<ILogObj> {
-
-}
-
-export default Logger;
+export class Logger extends tslogLogger<ILogObj> {}
