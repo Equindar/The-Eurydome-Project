@@ -6,6 +6,9 @@ export default defineConfig({
     plugins: [react()],
     test: {
         environment: 'jsdom',
+        coverage: {
+            reporter: ['text', 'json'],
+        },
     },
     resolve: {
         alias: [{ find: '@', replacement: resolve(__dirname, './src') }],

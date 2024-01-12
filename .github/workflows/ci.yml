@@ -1,11 +1,14 @@
-name: Test
+name: CI 
 on:
   push:
 
 jobs:
   run-action:
-    name: Run action
+    name: Run CI
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
 
     steps:
     - uses: actions/checkout@v4
@@ -15,11 +18,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install --package-lock-only
-        npm ci
+        npm install
 
-    - name: Run tests
-      run: npm test
+    - name: Run tests + coverage
+      run: |
+        npm run test
+        npm run coverage
 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
