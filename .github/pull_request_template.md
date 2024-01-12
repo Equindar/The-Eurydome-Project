@@ -1,5 +1,5 @@
 **Description:**
-Describe your changes.
+Describe your changes
 
 **Related issue:**
 Add link to the related issue.

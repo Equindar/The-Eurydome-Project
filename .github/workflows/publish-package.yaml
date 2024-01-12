@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build_and_publish:
+    name: Build and Publish package
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./.devcontainer
     steps:
       - uses: actions/checkout@v3
       - name: Build and push the image
