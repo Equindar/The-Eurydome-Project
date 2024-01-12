@@ -9,7 +9,6 @@ Metrics:
 [![GitHub issues-closed][issues-closed-badge]][issues-closed-url]
 [![GitHub pulls-opened][pull-requests-opened-badge]][pull-requests-opened-url]
 
-
 ## Getting Started
 
 First, run the development server:
@@ -24,7 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 [typescript-url]: https://www.typescriptlang.org
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
 [prettier-url]: https://github.com/prettier/prettier
-
 [actions-badge]: https://github.com/Equindar/LunarEclipse/workflows/CI/badge.svg?branch=master
 [actions-url]: https://github.com/Equindar/LunarEclipse/actions?query=workflow%3ACI
 [issues-opened-badge]: https://img.shields.io/github/issues/Equindar/LunarEclipse.svg

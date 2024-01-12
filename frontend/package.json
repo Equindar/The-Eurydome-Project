@@ -14,7 +14,8 @@
         "check-size:why": "size-limit --why",
         "test": "npm-run-all --parallel tsc:check vitest:run lint lint:format",
         "tsc:check": "tsc",
-        "vitest:run": "vitest run"
+        "vitest:run": "vitest run",
+        "coverage": "vitest run --coverage"
     },
     "dependencies": {
         "next": "14.0.4",

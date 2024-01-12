@@ -7,8 +7,8 @@ export default defineConfig({
     test: {
         environment: 'jsdom',
         coverage: {
-            reporter: ['text', 'json']
-        }
+            reporter: ['text', 'json'],
+        },
     },
     resolve: {
         alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
