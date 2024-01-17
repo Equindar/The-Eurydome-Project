@@ -28,7 +28,7 @@
         "@nkzw/eslint-config": "^1.10.0",
         "@size-limit/file": "^11.0.1",
         "@size-limit/webpack": "^11.0.1",
-        "@size-limit/webpack-why": "^11.0.1",
+        "@size-limit/webpack-why": "^11.0.2",
         "@testing-library/react": "^14.1.2",
         "@types/node": "^20",
         "@types/react": "^18",
