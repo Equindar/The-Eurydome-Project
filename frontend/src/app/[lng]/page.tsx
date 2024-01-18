@@ -1,15 +1,17 @@
+import { useTranslation } from '@/lib/i18n';
+import { fallbackLng, languages } from '@/lib/i18n/settings';
+import { Logger } from '@/lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
-import { useTranslation } from '../i18n';
-import { fallbackLng, languages } from '../i18n/settings';
 import { Test } from './components/Test';
 
-export default async function Page({
-    params: { lng },
-}: {
+interface PageProps {
     params: {
         lng: string;
     };
-}) {
+}
+
+export default async function Page({ params: { lng } }: PageProps) {
+    const log = new Logger({ name: 'Application' });
     if (languages.indexOf(lng) < 0) lng = fallbackLng;
     const { t } = await useTranslation(lng);
 

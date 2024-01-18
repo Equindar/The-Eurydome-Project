@@ -1,4 +1,4 @@
-import { useTranslation } from '../../i18n';
+import { useTranslation } from '@/lib/i18n';
 
 interface TestProps {
     params: {
@@ -7,10 +7,7 @@ interface TestProps {
 }
 
 export const Test: React.FC<TestProps> = async (props) => {
-    const { t } = await useTranslation(props.params.lng, 'translation');
-
-    t('')
-
+    const { t } = await useTranslation(props.params.lng);
     return (
         <>
             <h1>{t('title')}</h1>

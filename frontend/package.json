@@ -16,7 +16,7 @@
         "tsc:check": "tsc",
         "vitest:run": "vitest run",
         "coverage": "vitest run --coverage",
-        "i18n:update-res": "i18next-resources-for-ts interface -i ./src/app/i18n/locales/en -o ./@types/resources.d.ts"
+        "i18n:update-res": "i18next-resources-for-ts interface -i ./src/app/i18n/locales/en -o ./src/@types/i18n/resources.d.ts"
     },
     "dependencies": {
         "accept-language": "^3.0.18",

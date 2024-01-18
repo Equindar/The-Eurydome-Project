@@ -2,6 +2,7 @@ import { createInstance, FlatNamespace, KeyPrefix, Namespace } from 'i18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { FallbackNs } from 'react-i18next';
 import { initReactI18next } from 'react-i18next/initReactI18next';
+import { Logger } from '../log/Logger';
 import { getOptions } from './settings';
 
 const initI18next = async (lng: string, ns: string | string[]) => {
@@ -12,10 +13,19 @@ const initI18next = async (lng: string, ns: string | string[]) => {
         .use(
             resourcesToBackend(
                 (language: string, namespace: string) =>
-                    import(`./locales/${language}/${namespace}.json`),
+                    import(
+                        `../../app/i18n/locales/${language}/${namespace}.json`
+                    ),
             ),
         )
         .init(getOptions(lng, ns));
+    // logging
+    const log = new Logger({ name: 'Library' }).getSubLogger({ name: 'i18n' });
+    log.info('initializing...');
+    log.debug(`given params: [lng] ${lng}, [ns]: ${ns}`);
+    log.debug(
+        `using options:[lng] ${i18nInstance.options.lng}, [ns]: ${i18nInstance.options.ns}`,
+    );
     return i18nInstance;
 };
 

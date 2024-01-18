@@ -1,7 +1,6 @@
 'use client';
 
 import i18next, { FlatNamespace, KeyPrefix } from 'i18next';
-// import LocizeBackend from 'i18next-locize-backend'
 import LanguageDetector from 'i18next-browser-languagedetector';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { useEffect, useState } from 'react';
@@ -27,7 +26,6 @@ i18next
                 import(`./locales/${language}/${namespace}.json`),
         ),
     )
-    // .use(LocizeBackend) // locize backend could be used on client side, but prefer to keep it in sync with server side
     .init({
         ...getOptions(),
         lng: undefined, // let detect the language on client side
