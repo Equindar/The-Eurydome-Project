@@ -1,5 +1,11 @@
 {
     "dashboard": {
-        "title": "Dashboard"
+        "title": "Dashboard",
+        "navbar": {
+            "title": "Navigation Titel"
+        },
+        "sidebar": {
+            "title": "Seitenleiste Titel"
+        }
     }
 }

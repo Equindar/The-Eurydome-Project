@@ -9,7 +9,7 @@ interface DashboardProps {
 }
 
 export default async function Dashboard({ params: { lng } }: DashboardProps) {
-    const log = new Logger({ name: 'Login' });
+    const log = new Logger({ name: 'Dashboard' });
     if (languages.indexOf(lng) < 0) lng = fallbackLng;
     const { t } = await useTranslation(lng, 'admin');
 

@@ -2,6 +2,12 @@ interface Resources {
     admin: {
         dashboard: {
             title: 'Dashboard';
+            navbar: {
+                title: 'Navbar Title';
+            };
+            sidebar: {
+                title: 'Sidebar Title';
+            };
         };
     };
     common: {
