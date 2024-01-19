@@ -5,5 +5,8 @@
     "counter_zero": "keines ausgewählt",
     "h1": "Eine client Seite, um das client-seitige i18n zu demonstrieren",
     "title": "Client Seite",
-    "to-second-client-page": "zur zweiten client Seite"
+    "to-second-client-page": "zur zweiten client Seite",
+    "login": {
+        "title": "Login"
+    }
 }

@@ -2,7 +2,7 @@ import { useTranslation } from '@/lib/i18n';
 import { fallbackLng, languages } from '@/lib/i18n/settings';
 import { Logger } from '@/lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
-import { Test } from './components/Test';
+import { Test } from '../ui/components/Test';
 
 interface PageProps {
     params: {
@@ -11,15 +11,13 @@ interface PageProps {
 }
 
 export default async function Page({ params: { lng } }: PageProps) {
-    const log = new Logger({ name: 'Application'});
+    const log = new Logger({ name: 'Application' });
     if (languages.indexOf(lng) < 0) lng = fallbackLng;
     const { t } = await useTranslation(lng);
-    
 
     return (
         <>
             <main>
-                <h1>Home</h1>
                 <Test params={{ lng }} />
                 <h2>
                     <Trans t={t} i18nKey="welcome">

@@ -1,6 +1,6 @@
+import { languages } from '@/lib/i18n/settings';
 import { dir } from 'i18next';
 import React from 'react';
-import { languages } from '@/lib/i18n/settings';
 
 export async function generateStaticParams() {
     return languages.map((lng) => ({ lng }));
@@ -18,7 +18,8 @@ export default function RootLayout({
             <head />
             <body>
                 <p>Test Dev-Layout</p>
-                {children}</body>
+                {children}
+            </body>
         </html>
     );
 }
