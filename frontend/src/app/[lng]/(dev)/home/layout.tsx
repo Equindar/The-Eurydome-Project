@@ -1,8 +1,6 @@
-import './global.css';
 import { dir } from 'i18next';
 import React from 'react';
-import { languages } from '../../lib/i18n/settings';
-import { Logger } from '@/lib/log/Logger';
+import { languages } from '@/lib/i18n/settings';
 
 export async function generateStaticParams() {
     return languages.map((lng) => ({ lng }));
@@ -15,14 +13,12 @@ export default function RootLayout({
     children: React.ReactNode;
     params: { lng: string };
 }) {
-    const log = new Logger({ name: 'System' });
-    log.info('initializing...!');
-    log.debug(process.env.NODE_ENV);
-    
     return (
         <html lang={lng} dir={dir(lng)}>
             <head />
-            <body>{children}</body>
+            <body>
+                <p>Test Dev-Layout</p>
+                {children}</body>
         </html>
     );
 }

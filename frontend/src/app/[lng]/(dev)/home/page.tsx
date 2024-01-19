@@ -2,7 +2,6 @@ import { useTranslation } from '@/lib/i18n';
 import { fallbackLng, languages } from '@/lib/i18n/settings';
 import { Logger } from '@/lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
-import { Test } from './components/Test';
 
 interface PageProps {
     params: {
@@ -10,22 +9,16 @@ interface PageProps {
     };
 }
 
-export default async function Page({ params: { lng } }: PageProps) {
-    const log = new Logger({ name: 'Application'});
+export default async function Page(props: PageProps) {
+    const log = new Logger({ name: 'Application', prefix: ['DEV'] });
+    var lng = props.params.lng;
     if (languages.indexOf(lng) < 0) lng = fallbackLng;
-    const { t } = await useTranslation(lng);
-    
+    const { t } = await useTranslation(lng, 'dev');
 
     return (
         <>
             <main>
-                <h1>Home</h1>
-                <Test params={{ lng }} />
-                <h2>
-                    <Trans t={t} i18nKey="welcome">
-                        Welcome to Next.js v13 <small>appDir</small> and i18next
-                    </Trans>
-                </h2>
+                <h1>{t('dev:home.title')}</h1>
                 <hr style={{ marginTop: 20, width: '90%' }} />
                 <div>...</div>
             </main>

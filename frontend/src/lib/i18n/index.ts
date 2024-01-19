@@ -1,4 +1,4 @@
-import { createInstance, FlatNamespace, KeyPrefix, Namespace } from 'i18next';
+import { createInstance, FlatNamespace, KeyPrefix } from 'i18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { FallbackNs } from 'react-i18next';
 import { initReactI18next } from 'react-i18next/initReactI18next';
@@ -7,7 +7,10 @@ import { getOptions } from './settings';
 
 const initI18next = async (lng: string, ns: string | string[]) => {
     // on server side we create a new instance for each render, because during compilation everything seems to be executed in parallel
+    const log = new Logger({ name: 'Library' }).getSubLogger({ name: 'i18n' });
+    log.info('initializing...');
     const i18nInstance = createInstance();
+    log.debug(`given params: [lng] ${lng}, [ns]: ${ns}`);
     await i18nInstance
         .use(initReactI18next)
         .use(
@@ -19,10 +22,6 @@ const initI18next = async (lng: string, ns: string | string[]) => {
             ),
         )
         .init(getOptions(lng, ns));
-    // logging
-    const log = new Logger({ name: 'Library' }).getSubLogger({ name: 'i18n' });
-    log.info('initializing...');
-    log.debug(`given params: [lng] ${lng}, [ns]: ${ns}`);
     log.debug(
         `using options:[lng] ${i18nInstance.options.lng}, [ns]: ${i18nInstance.options.ns}`,
     );

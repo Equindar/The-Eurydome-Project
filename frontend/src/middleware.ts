@@ -1,6 +1,7 @@
 import acceptLanguage from 'accept-language';
 import { NextRequest, NextResponse } from 'next/server';
 import { cookieName, fallbackLng, languages } from './lib/i18n/settings';
+import { Logger } from './lib/log/Logger';
 
 acceptLanguage.languages(languages);
 
@@ -10,6 +11,8 @@ export const config = {
 };
 
 export function middleware(req: NextRequest) {
+    const log = new Logger({ name: 'Middleware' });
+    log.info('initializing...');
     if (
         req.nextUrl.pathname.indexOf('icon') > -1 ||
         req.nextUrl.pathname.indexOf('chrome') > -1
