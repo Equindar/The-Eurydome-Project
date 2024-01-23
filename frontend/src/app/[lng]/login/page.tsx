@@ -3,15 +3,15 @@ import { fallbackLng, languages } from '@/lib/i18n/settings';
 import { Logger } from '@/lib/log/Logger';
 
 interface LoginProps {
-    params: {
-        lng: string;
-    };
+  params: {
+    lng: string;
+  };
 }
 
 export default async function Login({ params: { lng } }: LoginProps) {
-    const log = new Logger({ name: 'Login' });
-    if (languages.indexOf(lng) < 0) lng = fallbackLng;
-    const { t } = await useTranslation(lng);
+  const log = new Logger({ name: 'Login' });
+  if (languages.indexOf(lng) < 0) lng = fallbackLng;
+  const { t } = await useTranslation(lng);
 
-    return <div>{t('login.title')}</div>;
+  return <div>{t('login.title')}</div>;
 }
