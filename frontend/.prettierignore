@@ -1,4 +1,6 @@
-coverage/
-dist/
 build/
-package-lock.json
+coverage/
+public/
+dist/
+node_modules/
+*.md
