@@ -36,6 +36,7 @@ Description
 - more notes
 - even more notes
 
+Tags: #template
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Pekko-Link]: https://github.com/RFS-81
