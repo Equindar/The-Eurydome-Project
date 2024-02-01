@@ -1,4 +1,9 @@
+---
+state: Unstructured
+level: Data
+---
+# Quests
 
 ___
-**Organisation:** n/a
+**Organisation:** Subset of [[Mechanics]]
 **Tags:** #game-mechanic 
