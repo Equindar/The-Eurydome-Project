@@ -1,7 +1,9 @@
 {
   "userIgnoreFilters": [
-    "concepts/"
+    "concepts/",
+    "templates/"
   ],
   "showInlineTitle": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "attachmentFolderPath": "attachments"
 }

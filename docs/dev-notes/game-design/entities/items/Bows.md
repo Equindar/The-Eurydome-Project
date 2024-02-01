@@ -2,6 +2,7 @@
 state: Unstructured
 level: Data
 ---
+# Bows
 
 ___
 **Organisation:** Subset of [[Weapons]]

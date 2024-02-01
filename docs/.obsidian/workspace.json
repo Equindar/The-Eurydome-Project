@@ -4,33 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "9211b530181c30b2",
+        "id": "4fe0e92ae115e132",
         "type": "tabs",
+        "dimension": 59.13461538461539,
         "children": [
           {
-            "id": "f2a7a2c2d8fa6e53",
+            "id": "b839f417bb1e855a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "meeting-notes/Meeting Notes.md",
+                "file": "dev-notes/game-design/entities/npc/Trader.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "fa052e92911cddea",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "af50e3998c5c8482",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "dev-notes/game-design/mechanics/Mechanics.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0021ac21dd1ca74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dev-notes/Troubleshooting.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "83b8daa49c0f5cd3",
+        "type": "tabs",
+        "dimension": 40.86538461538461,
+        "children": [
+          {
+            "id": "4790f31de1b7ebe4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dev-notes/game-design/entities/character/Player.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -99,6 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "dev-notes/game-design/entities/character/Player.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "dev-notes/game-design/entities/character/Player.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +172,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "dev-notes/game-design/entities/character/Player.md"
+              }
             }
           }
         ],
@@ -155,19 +193,34 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "publish:Publish changes...": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false
     }
   },
-  "active": "af50e3998c5c8482",
+  "active": "4790f31de1b7ebe4",
   "lastOpenFiles": [
-    "meeting-notes/Meeting Notes.md",
-    "meeting-notes/2024-01-18.md",
-    "dev-notes/game-design/entities/npc/Trader.md",
-    "dev-notes/game-design/entities/items/Items.md",
-    "dev-notes/game-design/entities/items/Daggers.md",
-    "dev-notes/game-design/entities/Entity.md",
+    "dev-notes/game-design/mechanics/Mechanics.md",
+    "dev-notes/game-design/mechanics/Quests.md",
+    "dev-notes/Troubleshooting.md",
+    "dev-notes/game-design/entities/items/Swords.md",
+    "attachments/sword.png",
+    "attachments",
+    "dev-notes/game-design/entities/Weapons.md",
+    "dev-notes/game-design/mechanics/Survival.md",
+    "dev-notes/game-design/mechanics/Looting.md",
+    "dev-notes/game-design/mechanics/Combat.md",
     "dev-notes/game-design/entities/character/Player.md",
+    "dev-notes/game-design/entities/items/Bows.md",
+    "dev-notes/game-design/entities/items/Daggers.md",
+    "dev-notes/game-design/entities/items/Items.md",
+    "dev-notes/game-design/entities/npc/Trader.md",
+    "dev-notes/game-design/entities/npc/NPC.md",
     "dev-notes/game-design/Game-Design.md",
+    "dev-notes/game-design/mechanics/Trading.md",
+    "dev-notes/game-design/mechanics/Crafting.md",
+    "meeting-notes/2024-01-18.md",
+    "meeting-notes/Meeting Notes.md",
+    "dev-notes/game-design/entities/Entity.md",
     "dev-notes/README.md",
     "dev-notes/framework",
     "dev-notes/domain",
@@ -176,26 +229,12 @@
     "templates/meeting_notes_template.md",
     "templates/idea_template.md",
     "templates/draft_template.md",
-    "templates/concept_template.md",
     "templates",
-    "dev-notes/game-design/mechanics/Quests.md",
-    "dev-notes/game-design/mechanics/Crafting.md",
     "dev-notes/game-design/mechanics",
-    "dev-notes/game-design/entities/items/Swords.md",
-    "dev-notes/game-design/entities/items/Bows.md",
-    "dev-notes/game-design/entities/Weapons.md",
     "dev-notes/game-design/entities/npc",
     "dev-notes/game-design/entities/items",
-    "dev-notes/game-design/entities/Inventory.md",
     "dev-notes/game-design/entities/character",
-    "dev-notes/game-design/entities/Armory.md",
     "dev-notes/game-design/entities",
-    "meeting-notes/meeting_notes_template.md",
-    "concepts/idea_template.md",
-    "concepts/draft_template.md",
-    "concepts/concept_template.md",
-    "dev-notes/entities/npc/Untitled",
-    "Untitled.canvas",
-    "roadmap.md"
+    "Untitled.canvas"
   ]
 }

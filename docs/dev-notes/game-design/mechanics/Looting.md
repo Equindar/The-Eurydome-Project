@@ -2,8 +2,8 @@
 state: Unstructured
 level: Data
 ---
-# Crafting
+# Looting
 
 ___
 **Organisation:** Subset of [[Mechanics]]
-**Tags:** #game-mechanic
+**Tags:** #reward #combat #chest
