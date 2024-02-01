@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-notes/Bows.md",
+                "file": "templates/concept_template.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,20 +25,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-notes/Items.md",
+                "file": "templates/idea_template.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "fa052e92911cddea",
         "type": "tabs",
         "children": [
           {
-            "id": "a41985448b69139b",
+            "id": "af50e3998c5c8482",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -74,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#character",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev-notes/Bows.md",
+                "file": "templates/idea_template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev-notes/Bows.md",
+                "file": "templates/idea_template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev-notes/Bows.md"
+                "file": "templates/idea_template.md"
               }
             }
           }
@@ -174,24 +175,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2a7a2c2d8fa6e53",
+  "active": "26001dd5d61e7b06",
   "lastOpenFiles": [
-    "concepts/idea_template.md",
-    "concepts/draft_template.md",
-    "concepts/concept_template.md",
-    "dev-notes/Bows.md",
-    "dev-notes/Armory.md",
-    "dev-notes/Crafting.md",
-    "dev-notes/Daggers.md",
-    "dev-notes/Items.md",
-    "dev-notes/Quests.md",
-    "dev-notes/Swords.md",
-    "dev-notes/Weapons.md",
-    "dev-notes/Inventory.md",
+    "templates/draft_template.md",
+    "templates/concept_template.md",
+    "templates/idea_template.md",
+    "templates/meeting_notes_template.md",
+    "dev-notes/README.md",
+    "dev-notes/entities/character/Player.md",
+    "dev-notes/entities/npc/Trader.md",
+    "dev-notes/entities/items/Bows.md",
+    "dev-notes/entities/items/Items.md",
+    "dev-notes/entities/npc/Untitled",
+    "dev-notes/entities/npc",
+    "dev-notes/entities/character",
+    "dev-notes/entities/Weapons.md",
+    "dev-notes/entities/items/Swords.md",
+    "dev-notes/mechanics/Crafting.md",
+    "dev-notes/entities/items",
+    "dev-notes/ui",
+    "dev-notes/enviroment",
+    "dev-notes/entities",
+    "dev-notes/mechanics",
+    "CODE_OF_CONDUCT.md",
+    "templates",
+    "dev-notes/entities/Armory.md",
+    "dev-notes/entities/items/Daggers.md",
+    "dev-notes/mechanics/Quests.md",
+    "dev-notes/entities/Inventory.md",
     "Untitled.canvas",
     "roadmap.md",
     "meeting-notes/2024-01-18.md",
-    "meeting-notes/meeting_notes_template.md",
     "dev-notes"
   ]
 }
