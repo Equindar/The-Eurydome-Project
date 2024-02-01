@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/concept_template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26001dd5d61e7b06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/idea_template.md",
+                "file": "meeting-notes/Meeting Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "fa052e92911cddea",
@@ -112,7 +99,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/idea_template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +115,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "templates/idea_template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +136,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "templates/idea_template.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -175,37 +158,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "26001dd5d61e7b06",
+  "active": "af50e3998c5c8482",
   "lastOpenFiles": [
+    "meeting-notes/Meeting Notes.md",
+    "meeting-notes/2024-01-18.md",
+    "dev-notes/game-design/entities/npc/Trader.md",
+    "dev-notes/game-design/entities/items/Items.md",
+    "dev-notes/game-design/entities/items/Daggers.md",
+    "dev-notes/game-design/entities/Entity.md",
+    "dev-notes/game-design/entities/character/Player.md",
+    "dev-notes/game-design/Game-Design.md",
+    "dev-notes/README.md",
+    "dev-notes/framework",
+    "dev-notes/domain",
+    "dev-notes/game-design",
+    "CODE_OF_CONDUCT.md",
+    "templates/meeting_notes_template.md",
+    "templates/idea_template.md",
     "templates/draft_template.md",
     "templates/concept_template.md",
-    "templates/idea_template.md",
-    "templates/meeting_notes_template.md",
-    "dev-notes/README.md",
-    "dev-notes/entities/character/Player.md",
-    "dev-notes/entities/npc/Trader.md",
-    "dev-notes/entities/items/Bows.md",
-    "dev-notes/entities/items/Items.md",
-    "dev-notes/entities/npc/Untitled",
-    "dev-notes/entities/npc",
-    "dev-notes/entities/character",
-    "dev-notes/entities/Weapons.md",
-    "dev-notes/entities/items/Swords.md",
-    "dev-notes/mechanics/Crafting.md",
-    "dev-notes/entities/items",
-    "dev-notes/ui",
-    "dev-notes/enviroment",
-    "dev-notes/entities",
-    "dev-notes/mechanics",
-    "CODE_OF_CONDUCT.md",
     "templates",
-    "dev-notes/entities/Armory.md",
-    "dev-notes/entities/items/Daggers.md",
-    "dev-notes/mechanics/Quests.md",
-    "dev-notes/entities/Inventory.md",
+    "dev-notes/game-design/mechanics/Quests.md",
+    "dev-notes/game-design/mechanics/Crafting.md",
+    "dev-notes/game-design/mechanics",
+    "dev-notes/game-design/entities/items/Swords.md",
+    "dev-notes/game-design/entities/items/Bows.md",
+    "dev-notes/game-design/entities/Weapons.md",
+    "dev-notes/game-design/entities/npc",
+    "dev-notes/game-design/entities/items",
+    "dev-notes/game-design/entities/Inventory.md",
+    "dev-notes/game-design/entities/character",
+    "dev-notes/game-design/entities/Armory.md",
+    "dev-notes/game-design/entities",
+    "meeting-notes/meeting_notes_template.md",
+    "concepts/idea_template.md",
+    "concepts/draft_template.md",
+    "concepts/concept_template.md",
+    "dev-notes/entities/npc/Untitled",
     "Untitled.canvas",
-    "roadmap.md",
-    "meeting-notes/2024-01-18.md",
-    "dev-notes"
+    "roadmap.md"
   ]
 }

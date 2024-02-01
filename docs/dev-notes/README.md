@@ -4,10 +4,12 @@ Structuring the notes is always a work in progress until we define some rules an
 Take a logical approach, reuse whats already set up, reach out for improvements and name things appropriate, that it can be found easily.
 ## Notes
 ### Properties
-You add properties on notes by typing on the very first line `---`
-Assigning properties help filtering the entire dev-note vault 
+You add properties on notes by typing on the very first line `---`.
+
+Assigning properties help filtering the entire dev-note vault.
 > I introduced the properties "state" and "level".
-> "State" represents our understanding of the state of a idea/concept for project management. Availabe States are "unstructured" > "structured", "idea" > "concept" > "draft"
+> "State" represents our understanding of the state of a idea/concept for project management. Availabe States are "unstructured" > "structured", "idea" > "draft" > "concept".
+> 
 > "Level" represents one stage of the [DIKW pyramid](https://en.wikipedia.org/wiki/DIKW_pyramid) and defines the grade of refinement of the entire note. Available levels are: "data", "information", "knowledge", "wisdom".
 > *@Equindar*
 

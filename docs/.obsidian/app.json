@@ -2,5 +2,6 @@
   "userIgnoreFilters": [
     "concepts/"
   ],
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": true
 }
