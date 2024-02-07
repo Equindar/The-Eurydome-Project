@@ -15,6 +15,14 @@ node_modules
 # Ignore built files
 build/**/*
 
+# code formatter
+.eslintrc
+.eslintignore
+.editorconfig
+.huskyrc
+.lintstagedrc.json
+.prettierrc
+
 # ignore test converage
 coverage
 
@@ -23,3 +31,7 @@ coverage
 .git
 
 .DS_Store 
+
+# docker
+Dockerfile
+docker-compose.yml

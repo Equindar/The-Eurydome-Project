@@ -1,0 +1,11 @@
+# editor/ide files
+.vscode/
+
+# dependencies
+node_modules/
+
+# build artifacts
+build/
+
+# logs
+logs/

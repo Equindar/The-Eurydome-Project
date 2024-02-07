@@ -31,3 +31,6 @@ temp
 
 *.save
 *.save.*
+
+# local env files
+.env*.local
