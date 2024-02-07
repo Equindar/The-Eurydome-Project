@@ -1,6 +1,16 @@
+# editor/ide files
+.vscode/
+
+# dependencies
+node_modules/
+
+# build artifacts
 build/
+
+# logs
+logs/
+
+# others
 coverage/
 public/
-dist/
-node_modules/
 *.md

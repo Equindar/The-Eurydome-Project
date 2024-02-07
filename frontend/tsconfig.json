@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
+    // --- Projects
+    /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    "incremental": true,
+    /* Specify the path to .tsbuildinfo incremental compilation file. */
+    "tsBuildInfoFile": "./cache/.tsbuildinfo",
+
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -13,7 +18,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
     "plugins": [
       {
         "name": "next",
@@ -22,6 +26,11 @@
     "paths": {
       "@/*": ["./src/*"],
     },
+
+    /* Completeness */
+    /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,
+    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"],
   "exclude": ["node_modules"],

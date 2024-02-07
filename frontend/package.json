@@ -1,13 +1,15 @@
 {
-  "name": "LunarEclipse",
+  "name": "lunareclipse-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build",
+    "build:clean": "npm run clean && npm run build",
+    "clean": "rimraf ./build",
     "dev": "next dev",
     "dev:update-deps": "rimraf package-lock.json node_modules && npm install",
     "format": "prettier --write .",
     "lint:format": "prettier --cache --check .",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "check-size": "size-limit",
