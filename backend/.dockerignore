@@ -1,37 +1,44 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
-.idea
+# ignore IDE project/config files
+**/.vscode
+**/.vs
+**/.idea
 
-# ignore vs code project config files
-.vscode
-.vs
+# ignore enviroment files
+**/.env
 
 # ignore logs
-logs
-*.log
+**/logs
+**/*.log
+
+# ignore documentation
+**/README.md
 
 # ignore 3rd party lib
-node_modules
+**/node_modules/
 
 # Ignore built files
 build/**/*
 
 # code formatter
-.eslintrc
-.eslintignore
-.editorconfig
-.huskyrc
-.lintstagedrc.json
-.prettierrc
+**/.eslintrc
+**/.eslintignore
+**/.editorconfig
+**/.huskyrc
+**/.lintstagedrc.json
+**/.prettierrc
 
-# ignore test converage
-coverage
+# ignore test + coverage
+**/coverage
 
 # git
-.gitignore
-.git
+**/.gitignore
+**/.git
 
 .DS_Store 
 
 # docker
 Dockerfile
 docker-compose.yml
+
+# others
+**/LICENSE
