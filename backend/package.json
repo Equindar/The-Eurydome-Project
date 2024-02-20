@@ -8,11 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
+    "start": "npm run build && cross-env NODE_ENV=production node build/server.js",
     "clean": "rimraf ./build",
     "build": "tsc",
     "build:clean": "npm run clean && npm run build",
-    "dev": "cross-env NODE_ENV=development nodemon",
+    "dev": "nodemon",
     "dev:update-deps": "rimraf package-lock.json node_modules && npm install",
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint -- --fix",

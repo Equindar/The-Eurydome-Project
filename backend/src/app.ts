@@ -13,6 +13,10 @@ const app = express();
 app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 }));
 
 // Routes
-app.use('/', router);
+// app.use('/', router);
+app.get('/', (req: Request, res: Response) => {
+  res.status(200).send('Hello World!');
+  Logger.info(req.cookies);
+});
 
 export default app;
