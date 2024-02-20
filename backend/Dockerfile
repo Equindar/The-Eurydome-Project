@@ -1,23 +1,34 @@
-# Here we are getting our node as Base image
-FROM node:20.10.0
+# --- Setup base image
+FROM node:20.10.0-alpine AS base
 
-# create user in the docker image
-USER node
 
-# Creating a new directory for app files and setting path in the container
-RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
+# --- Setup dependencies image from origin 'base'
+FROM base AS dependencies
+# Install dependencies based on the preferred package manager
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+RUN \
+  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
 
-# setting working directory in the container
-WORKDIR /home/node/app
 
-# grant permission of node project directory to node user
-COPY --chown=node:node . .
+# --- Setup development image from origin 'base'
+FROM base AS development
+WORKDIR /app
+COPY . .
+RUN npm ci && npm run build
 
-# installing the dependencies into the container
-RUN npm install
 
+# --- Setup production image from origin 'base'
+FROM base AS production
 # container exposed network port number
-EXPOSE 3000
+WORKDIR /app
+EXPOSE 3001
 
+COPY --from=development /app/build ./build
+COPY package.json package-lock.json ./
+RUN npm install --omit=dev
 # command to run within the container
-CMD [ "npm", "start" ]
+CMD [ "node", "build/server.js" ]

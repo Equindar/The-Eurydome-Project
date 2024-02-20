@@ -6,6 +6,9 @@
 # ignore enviroment files
 **/.env
 
+# ignore dev-deps
+nodemon.json
+
 # ignore logs
 **/logs
 **/*.log
