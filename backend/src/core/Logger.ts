@@ -1,8 +1,8 @@
+import { environment, logDirectory } from '../config';
 import { createLogger, transports, format } from 'winston';
+import DailyRotateFile from 'winston-daily-rotate-file';
 import fs from 'fs';
 import path from 'path';
-import DailyRotateFile from 'winston-daily-rotate-file';
-import { environment, logDirectory } from '../config';
 
 let dir = logDirectory;
 if (!dir) dir = path.resolve('logs');
@@ -25,21 +25,20 @@ const dailyRotateFile = new DailyRotateFile({
   maxSize: '20m',
   maxFiles: '14d',
   format: format.combine(
-    format.errors({ stack: true }),
     format.timestamp(),
-    format.json(),
+    format.errors({ stack: true }),
+    format.simple(),
   ),
 });
 
 export default createLogger({
+  level: logLevel,
+  format: format.combine(
+    format.errors({ stack: true }),
+    format.prettyPrint(),
+  ),
   transports: [
-    new transports.Console({
-      level: logLevel,
-      format: format.combine(
-        format.errors({ stack: true }),
-        format.prettyPrint(),
-      ),
-    }),
+    new transports.Console(),
     dailyRotateFile,
   ],
   exceptionHandlers: [dailyRotateFile],
