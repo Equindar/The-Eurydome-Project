@@ -6,54 +6,6 @@
       {
         "id": "4fe0e92ae115e132",
         "type": "tabs",
-        "dimension": 59.13461538461539,
-        "children": [
-          {
-            "id": "b839f417bb1e855a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev-notes/game-design/entities/npc/Trader.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af50e3998c5c8482",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev-notes/game-design/mechanics/Mechanics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0021ac21dd1ca74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev-notes/Troubleshooting.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "83b8daa49c0f5cd3",
-        "type": "tabs",
-        "dimension": 40.86538461538461,
         "children": [
           {
             "id": "4790f31de1b7ebe4",
@@ -61,11 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-notes/game-design/entities/character/Player.md",
+                "file": "concepts/Lobby.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "57dc771646e4e829",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "628b926ce746edc5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -118,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "37eeb7a6e21d5812",
@@ -134,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev-notes/game-design/entities/character/Player.md",
+                "file": "concepts/Lobby.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev-notes/game-design/entities/character/Player.md",
+                "file": "concepts/Lobby.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev-notes/game-design/entities/character/Player.md"
+                "file": "concepts/Lobby.md"
               }
             }
           }
@@ -194,13 +161,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "publish:Publish changes...": false,
-      "command-palette:Open command palette": false,
-      "random-note:Open random note": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "4790f31de1b7ebe4",
   "lastOpenFiles": [
+    "concepts/Lobby.md",
+    "dev-notes/game-design/entities/npc/Trader.md",
+    "dev-notes/game-design/entities/character/Player.md",
     "dev-notes/game-design/mechanics/Mechanics.md",
     "dev-notes/game-design/mechanics/Quests.md",
     "dev-notes/Troubleshooting.md",
@@ -211,11 +179,9 @@
     "dev-notes/game-design/mechanics/Survival.md",
     "dev-notes/game-design/mechanics/Looting.md",
     "dev-notes/game-design/mechanics/Combat.md",
-    "dev-notes/game-design/entities/character/Player.md",
     "dev-notes/game-design/entities/items/Bows.md",
     "dev-notes/game-design/entities/items/Daggers.md",
     "dev-notes/game-design/entities/items/Items.md",
-    "dev-notes/game-design/entities/npc/Trader.md",
     "dev-notes/game-design/entities/npc/NPC.md",
     "dev-notes/game-design/Game-Design.md",
     "dev-notes/game-design/mechanics/Trading.md",
