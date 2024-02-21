@@ -2,8 +2,9 @@
 state: Unstructured
 level: Data
 ---
-# Crafting
+# Survival
+
 
 ___
 **Organisation:** Subset of [[Mechanics]]
-**Tags:** #game-mechanic
+**Tags:** #wilderness
