@@ -24,18 +24,14 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
 
     /* Completeness */
     /* Skip type checking all .d.ts files. */
-    "skipLibCheck": true,
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-=======
-      "@/*": ["./src/*"]
-    }
->>>>>>> c2b422d (moved src/__test__ to ./test, adjusted tsconfig.json)
+    "skipLibCheck": true
+    /* Skip type checking .d.ts files that are included with TypeScript. */
+    // "skipDefaultLibCheck": true,
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"],
   "exclude": ["node_modules"]
