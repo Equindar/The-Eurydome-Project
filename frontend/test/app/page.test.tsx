@@ -1,8 +1,8 @@
+// Test Subject
+import Page from '@/app/[lng]/page';
 import { render, screen } from '@testing-library/react';
 import { describe } from 'node:test';
 import { expect, test } from 'vitest';
-// Test Subject
-import Page from '../app/[lng]/page';
 
 describe('Test Suite: Basic-Tests', () => {
   test.skip('Testing h1-Tag in Page', async () => {
