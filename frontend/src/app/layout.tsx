@@ -3,7 +3,8 @@ import { Logger } from '@/lib/log/Logger';
 import { dir } from 'i18next';
 import React from 'react';
 import { languages } from '../lib/i18n/settings';
-import { LanguageSelect } from './ui/language/LanguageSelect';
+import AppBar from './components/ui/AppBar';
+import Footer from './components/ui/Footer';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -29,9 +30,10 @@ export default function RootLayout({
     <html lang={lng} dir={dir(lng)}>
       <head />
       <body>
-        <LanguageSelect />
+        <AppBar lng={lng} />
         <hr />
         {children}
+        <Footer lng={lng} />
       </body>
     </html>
   );

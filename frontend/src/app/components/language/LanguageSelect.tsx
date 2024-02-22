@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 interface LanguageSelectProps {}
 
-export const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
+const LanguageSelect = (props: LanguageSelectProps) => {
   return (
     <div className="flex w-full flex-row-reverse">
       <ul className="m-5 flex">
@@ -28,3 +28,5 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
     </div>
   );
 };
+
+export default LanguageSelect;

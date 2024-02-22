@@ -1,8 +1,8 @@
+import { Test } from '@/app/components/ui/Test';
 import { useTranslation } from '@/lib/i18n';
 import { fallbackLng, languages } from '@/lib/i18n/settings';
 import { Logger } from '@/lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
-import { Test } from '../ui/components/Test';
 
 interface PageProps {
   params: {
@@ -21,7 +21,7 @@ export default async function Page({ params: { lng } }: PageProps) {
         <Test params={{ lng }} />
         <h2>
           <Trans t={t} i18nKey="welcome">
-            Welcome to Next.js v13 <small>appDir</small> and i18next
+            Welcome to Next.js v14 <small>appDir</small> and i18next
           </Trans>
         </h2>
         <hr style={{ marginTop: 20, width: '90%' }} />
