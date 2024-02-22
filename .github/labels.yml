@@ -16,6 +16,7 @@
 - name: "github-actions"
   description: "Pull requests that update GitHub Actions code"
   color: "000000"
+  from_name: "github_actions"
 - name: "good-first-issue"
   description: "Good for newcomers to start contributing"
   color: "7057ff"
