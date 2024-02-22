@@ -1,2 +1,4 @@
-# exclude workspace cache from obsidian
-/.obsidian/workspace.json
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# --- obsidian (workspace cache)
+.obsidian/workspace.json
