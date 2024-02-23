@@ -4,8 +4,8 @@
     /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
     "incremental": true,
     /* Specify the path to .tsbuildinfo incremental compilation file. */
-    "tsBuildInfoFile": "./cache/.tsbuildinfo",
-    "target": "es5",
+    "tsBuildInfoFile": "./build/cache/.tsbuildinfo",
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "strict": true,
