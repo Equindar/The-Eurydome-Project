@@ -36,5 +36,6 @@ export function middleware(req: NextRequest) {
     return response;
   }
 
+  log.info(req.headers);
   return NextResponse.next();
 }

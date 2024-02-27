@@ -1,10 +1,12 @@
 import './global.css';
+import ThemeProvider from '@/components/ThemeProvider';
+import AppBar from '@/components/ui/AppBar';
+import Footer from '@/components/ui/Footer';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { Logger } from '@/lib/log/Logger';
 import { dir } from 'i18next';
 import React from 'react';
 import { languages } from '../lib/i18n/settings';
-import AppBar from './components/ui/AppBar';
-import Footer from './components/ui/Footer';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -25,15 +27,24 @@ export default function RootLayout({
   if (process.env.LOG_LEVEL != undefined) {
     log.info(`LOG_LEVEL found: ${process.env.LOG_LEVEL}`);
   }
+  log.silly(lng);
 
   return (
-    <html lang={lng} dir={dir(lng)}>
+    <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
       <head />
       <body>
-        <AppBar lng={lng} />
-        <hr />
-        {children}
-        <Footer lng={lng} />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AppBar lng={lng} />
+          {/* <ThemeToggle /> */}
+          <hr />
+          {children}
+          <Footer lng={lng} />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
-import Navbar from '@/app/components/dashboard/Navbar';
-import Sidebar from '@/app/components/dashboard/Sidebar';
+import Navbar from '@/components/dashboard/Navbar';
+import Sidebar from '@/components/dashboard/Sidebar';
 import { languages } from '@/lib/i18n/settings';
 
 interface LayoutProps {
