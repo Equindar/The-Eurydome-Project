@@ -7,6 +7,9 @@
 /logs
 *.log
 
+# --- documentation
+/docs
+
 # --- authentification / keys
 *.pem
 keys/*
