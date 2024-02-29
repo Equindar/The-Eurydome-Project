@@ -2,10 +2,12 @@ import Logger from './core/Logger';
 import { port, environment } from './config';
 import app from './app';
 
-console.log(`detected env: ${process.env.NODE_ENV}`);
-console.log(`logger assigned level: ${Logger.level}`);
+Logger.debug(`detected env: ${process.env.NODE_ENV}`);
+Logger.debug(`logger assigned level: ${Logger.level}`);
 
-app
-  .listen(port, () => {
-    Logger.info(`server running on port : ${port}`);
-  });
+/**
+ * @summary Just another API you can talk to.
+ */
+app.listen(3001, () => {
+  Logger.info(`server running on port : ${port}`);
+});

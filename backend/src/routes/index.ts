@@ -1,12 +1,11 @@
 import Logger from 'core/Logger';
 import express from 'express';
-import { Response } from 'express';
+import status from './status/status';
 
 const router = express.Router();
 
+router.use('/status', status);
+
 Logger.info('Express Router: /');
-router.get('/', (res: Response) => {
-  res.status(200).send('Hello World!');
-});
 
 export default router;
