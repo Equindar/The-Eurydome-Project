@@ -1,6 +1,12 @@
 # Renaming a local git branch
-`git checkout master`
-`git branch -m main`
+```shell
+git checkout master
+```
+
+```shell
+git branch -m main
+```
+
 Result: Local branch "master" will be renamed to "main" 
 
 ___
