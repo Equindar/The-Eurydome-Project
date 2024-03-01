@@ -1,24 +1,23 @@
 import './global.css';
-import ThemeProvider from '@/components/ThemeProvider';
-import AppBar from '@/components/ui/AppBar';
-import Footer from '@/components/ui/Footer';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
-import { Logger } from '@/lib/log/Logger';
+import ThemeProvider from 'components/ThemeProvider';
+import AppBar from 'components/ui/AppBar';
+import Footer from 'components/ui/Footer';
 import { dir } from 'i18next';
+import { fallbackLng, languages } from 'lib/i18n/settings';
+import { Logger } from 'lib/log/Logger';
+import { headers } from 'next/headers';
 import React from 'react';
-import { languages } from '../lib/i18n/settings';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
-export default function RootLayout({
-  children,
-  params: { lng },
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-  params: { lng: string };
-}) {
+  lng: string;
+};
+
+export default function RootLayout({ children, lng }: RootLayoutProps) {
   const log = new Logger({ name: 'System' });
   log.info('initializing...!');
   if (process.env.ENV_FILE != undefined) {
@@ -27,10 +26,13 @@ export default function RootLayout({
   if (process.env.LOG_LEVEL != undefined) {
     log.info(`LOG_LEVEL found: ${process.env.LOG_LEVEL}`);
   }
-  log.silly(lng);
 
   return (
-    <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
+    <html
+      lang={lng}
+      dir={dir(headers().get('Accept-Language') ?? fallbackLng)}
+      suppressHydrationWarning
+    >
       <head />
       <body>
         <ThemeProvider

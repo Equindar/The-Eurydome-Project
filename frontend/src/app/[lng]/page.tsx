@@ -1,7 +1,7 @@
-import { Test } from '@/components/ui/Test';
-import { useTranslation } from '@/lib/i18n';
 import { fallbackLng, languages } from '@/lib/i18n/settings';
-import { Logger } from '@/lib/log/Logger';
+import { Test } from 'components/ui/Test';
+import { useTranslation } from 'lib/i18n';
+import { Logger } from 'lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
 
 interface PageProps {
