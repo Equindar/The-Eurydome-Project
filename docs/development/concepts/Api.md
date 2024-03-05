@@ -19,15 +19,16 @@ Es muss eine Kommunikation zwischen Client und Server stattfinden um Aktualisier
 ### Recherchierte Möglichkeiten:
 
 AJAX
-
 - Nachladen ganzer XML und HTML Elemente
-- Pro: Simpel umzusetzen
-- Contra: Sehr hoher Traffic
-  REST-API
+ - Pro: Simpel umzusetzen
+ - Contra: Sehr hoher Traffic
+
+REST-API
 - Abrufen von Informationen auf dem Server
-- Pro: Relativ einfach, weniger Traffic
-- Contra: Daten müssen verarbeitet werden.
-  WebSocket
+ - Pro: Relativ einfach, weniger Traffic
+ - Contra: Daten müssen verarbeitet werden.
+
+WebSocket
 - Dauerhafte bidirektionale Verbindung zum Server
 - Pro: Sehr wenig Traffic, Synchron ohne Verzögerungen
 - Contra: Aufwendige Umsetzung, Unter Umständen durch Firewall geblockt
@@ -39,11 +40,12 @@ Es soll eine einfache Lösung gefunden werden, die bei allen Clients funktionier
 ### Bestandteile:
 
 Datenbank
-
 - Speichern und Verwalten der Spielerdaten
-  Backend-Schnittstelle
+
+Backend-Schnittstelle
 - Prüfen der Berechtigung und Zusenden der Daten
-  Frontend-Schnittstelle
+
+Frontend-Schnittstelle
 - Abrufen und Vermitteln der Daten innerhalb des Frontends
 
 ### Probleme die auftreten können:
@@ -56,15 +58,16 @@ Außerdem muss sichergestellt werden, dass die Anfragen sinnvoll organisiert wer
 ### Geschätzter Aufwand an Personal und Zeiten:
 
 Basisaufbau
-
 - Grundfunktionalität
 - 1 Programmierer
 - ca. 3 Stunden
-  Ausarbeitung
+
+Ausarbeitung
 - Umsetzung der nötigen Anfragen
 - 1 Programmierer
 - ca. 7 Stunden
-  Wartung
+
+Wartung
 - Einsicht der Logs und Verbesserungen
 - 1 Programmierer
 - dauerhaft
