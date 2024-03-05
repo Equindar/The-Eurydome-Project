@@ -3,7 +3,6 @@ state: Unstructured
 level: Data
 language: German
 ---
-
 # Lobby
 
 ## IST-Zustand
@@ -16,7 +15,7 @@ Das Spielen in der Gruppe ist ein wichtiges, zentrales Spielelement für die Com
 
 ### Problemstellung
 
-Die Lobby erlaubt es, dass eingeloggte Spieler sich zu Gruppen zusammenfinden können, um ein gemeinsames Abenteuer zu erleben. Dabei hat der Benutzer die Möglichkeit, eine neue Gruppe zu erstellen und diese zu verwalten oder einer bestehenden Gruppe über eine Liste beizutreten. Das aktive Verlassen einer Gruppe ist durch den Spieler möglich, automatisch wird dies bei der Auflösung der Gruppe durchgeführt. Der Gruppenleiter hat die Möglichkeit, die Gruppe aufzulösen, Einstellungen zu ändern oder die Zugänglichkeit zur Gruppe zu beschränken. Ein weiteres Recht des Gruppenleiters ist es, Spieler temporär oder permanent aus der Gruppe zu entfernen. Permanent entfernte Spieler ist ein erneuter Beitritt zur Gruppe nicht gestattet.
+Die Lobby erlaubt es, dass eingeloggte Spieler sich zu Gruppen zusammenfinden können, um ein gemeinsames Abenteuer zu erleben. Dabei hat der Benutzer die Möglichkeit, eine neue Gruppe zu erstellen und diese zu verwalten oder einer bestehenden Gruppe über eine Liste beizutreten. Gruppenlose Spieler können sich auf mehrere Gruppenplätze gleichzeitig bewerben und werden damit zu Gruppenanwärtern. Wird die Bewerbung eines Anwärters angenommen, tritt dieser der Gruppen automatisch bei und alle weiteren Bewerbungen werden ungültig. Der Gruppenleiter hat die Möglichkeit, die Gruppe aufzulösen, Einstellungen zu ändern oder die Zugänglichkeit zur Gruppe zu beschränken. Ein weiteres Recht des Gruppenleiters ist es, Spieler temporär oder permanent aus der Gruppe zu entfernen. Permanent entfernte Spieler ist ein erneuter Beitritt zur Gruppe nicht gestattet. Das aktive Verlassen einer Gruppe ist durch den Spieler möglich, automatisch wird dies bei der Auflösung der Gruppe durchgeführt. 
 
 ### Recherchierte Möglichkeiten
 
@@ -99,7 +98,22 @@ Akzeptanzkriterien / Definition of Done:
   - Ein Spieler, der keiner Gruppe angehört, sieht eine Liste aller verfügbaren Gruppen
   - Ein Spieler ohne Gruppenzugehörigkeit kann einer bestehenden Gruppe beitreten
   - Ein Spieler mit Gruppenzugehörigkeit kann eine Gruppe wechseln, dabei die Gruppen-Aktion "verlassen", "betreten" nacheinander durchgeführt.
+  -  Ein Spieler mit Gruppenzugehörigkeit kann sich in der Lobby nach anderen Gruppen umsehen, dabei ist es egal, welche aktuelle Gruppenrolle man besitzt.
+___
+Notizen / Änderungen:
+- Gruppenvorlage: ad acta für den Moment
+- Passwortgeschützt: ad acta, aktuell nicht geplant
+- Gruppenanwärter: Spieler können sich gleichzeitig auf mehrere Gruppen und -plätze bewerben
+- Gruppenleiter können Bewerbungen ansehen, annehmen und ablehnen.
+- Gruppengrößen können limitiert werden, müssen jedoch nicht.
+- Während man seine Gruppe gegründet hat, kann man dennoch die anderen Gruppen sehen.
+- Sobald man einer Gruppe beitritt, werden alle aktiven Bewerbungen verworfen.
+- Darstellung:
+	- Aktive Gruppen steht oben
+	- In der Lobby steht ein Chat zur Verfügung für alle.
 
+Mögliche Situation:
+- Tavernenchat: "Leute, wir brauchen noch einen Tank für Mission XYZ" + Checkbox: Bewerbung akzeptieren.
 ---
 
 Tags: #community #group
