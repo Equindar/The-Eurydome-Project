@@ -14,6 +14,8 @@ Für DEV- und Testuser Angelegenheiten ist es eine gute Sache.
 - Ticket-Erstellung / Support
 - Rollen-Zuweisung (Sync)
 - Event (Sync)
+- Community-Fragen:
+	- Eine Frage wird gestellt, einer von uns reagiert mit einem Emote. Die Frage wird durch den Bot intern in ⁠das Forum "community-fragen" gepostet und wir können drüber reden.
 
 ## Recherche
 Webhook oder Full-Bot
