@@ -5,14 +5,26 @@ import { Logger } from './lib/log/Logger';
 
 acceptLanguage.languages(languages);
 
+// --- Custom Matcher configuration
 export const config = {
-  // matcher: '/:lng*'
+  /*
+   * Match all request paths except for the ones starting with:
+   * - api (API routes)
+   * - _next/static (static files)
+   * - _next/image (image optimization files)
+   * - favicon.ico (favicon file)
+   */
   matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)'],
 };
 
+// --- Middleware
 export function middleware(req: NextRequest) {
   const log = new Logger({ name: 'Middleware' });
   log.info('initializing...');
+  log.debug(req.nextUrl.toString());
+  log.debug(req.nextUrl.pathname);
+
+  return;
   if (req.nextUrl.pathname.indexOf('icon') > -1 || req.nextUrl.pathname.indexOf('chrome') > -1)
     return NextResponse.next();
   let lng: string | undefined | null;
@@ -35,7 +47,5 @@ export function middleware(req: NextRequest) {
     if (lngInReferer) response.cookies.set(cookieName, lngInReferer);
     return response;
   }
-
-  log.info(req.headers);
   return NextResponse.next();
 }
