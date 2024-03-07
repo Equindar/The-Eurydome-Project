@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 /analyze
 
+# --- caching
+/cache
+
 # --- authentification / keys
 *.pem
 

@@ -2,7 +2,6 @@
 import Page from '@/app/[lng]/(main)/page';
 import { render, screen } from '@testing-library/react';
 import { describe } from 'node:test';
-import { expect, test } from 'vitest';
 
 describe('Test Suite: Basic-Tests', () => {
   test.skip('Testing h1-Tag in Page', async () => {
