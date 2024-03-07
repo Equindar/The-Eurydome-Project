@@ -3,7 +3,7 @@ state: Unstructured
 level: Data
 language: German
 ---
-# Effekte
+# Effekt / Effekte
 ## Allgemein
 Effekte sind Zustandsbeschreibung des Spielers. Diese sind meistens zeitlich begrenzt sein, jedoch auch an die Welt an sich gebunden sein.
 So ist es auf einer Testwelt denkbar, dass ein globaler Effekt existiert, der den Erfahrungszuwachs erhöht oder den Zeitverlauf beschleunigt.
@@ -20,6 +20,7 @@ Hier eine kurze Liste, die gebrainstormed wurde, welche Effekte es potenziell ge
 - Paralyse
 - Schlaf
 - Vergiftung
+- Heilung / Genesung
 - Kälte / Unterkühlung
 - Wut / Kampfesrausch
 - Überhitzung
@@ -37,6 +38,8 @@ Hier eine kurze Liste, die gebrainstormed wurde, welche Effekte es potenziell ge
 - Nässe
 - Tarnung / Camouflage
 - "GodMode" (Debugging)
+- Verletzung
+- Krankheit / Infektion
 
 ## Charakter von Effekten
 Charakter im Sinne von der Wirkweise von Effekten.
