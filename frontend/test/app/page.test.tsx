@@ -1,5 +1,5 @@
 // Test Subject
-import Page from '@/app/[lng]/page';
+import Page from '@/app/[lng]/(main)/page';
 import { render, screen } from '@testing-library/react';
 import { describe } from 'node:test';
 import { expect, test } from 'vitest';

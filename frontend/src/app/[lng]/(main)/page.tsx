@@ -1,5 +1,12 @@
 import { fallbackLng, languages } from '@/lib/i18n/settings';
-import { Test } from 'components/ui/Test';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from 'components/ui/card';
 import { useTranslation } from 'lib/i18n';
 import { Logger } from 'lib/log/Logger';
 import { Trans } from 'react-i18next/TransWithoutContext';
@@ -17,8 +24,20 @@ export default async function Page({ params: { lng } }: PageProps) {
 
   return (
     <>
-      <main>
-        <Test params={{ lng }} />
+      <main className="mx-auto px-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent className="flex items-center space-x-4 rounded-md border p-4">
+            <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
+
         <h2>
           <Trans t={t} i18nKey="welcome">
             Welcome to Next.js v14 <small>appDir</small> and i18next

@@ -21,16 +21,18 @@ export const config = {
 export function middleware(req: NextRequest) {
   const log = new Logger({ name: 'Middleware' });
   log.info('initializing...');
-  log.debug(req.nextUrl.toString());
-  log.debug(req.nextUrl.pathname);
 
-  return;
+  // Except additional URI (icon, chrome)
   if (req.nextUrl.pathname.indexOf('icon') > -1 || req.nextUrl.pathname.indexOf('chrome') > -1)
     return NextResponse.next();
+
+  // Set language based on
   let lng: string | undefined | null;
+  log.debug(`Cookie data in Request Header: ${req.cookies.get(cookieName)?.value}`);
   if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName)?.value);
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'));
   if (!lng) lng = fallbackLng;
+  log.debug(`lng content: ${lng}`);
 
   // Redirect if lng in path is not supported
   if (

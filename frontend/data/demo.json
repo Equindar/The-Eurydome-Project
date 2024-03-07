@@ -1,0 +1,32 @@
+{
+  "prototyps": [
+    {
+      "id": 1,
+      "title": "Dev Blog",
+      "desc": "Unser Dev-Blog ist live",
+      "date": "2024-03-08",
+      "public": true
+    },
+    {
+      "id": 2,
+      "title": "Lobby",
+      "desc": "Beschreibung der Lobby",
+      "date": "2024-03-17",
+      "public": false
+    },
+    {
+      "id": 3,
+      "title": "Items",
+      "desc": "Beschreibung",
+      "date": "2024-03-31",
+      "public": false
+    },
+    {
+      "id": 4,
+      "title": "Inventar",
+      "desc": "mehr Beschreibung",
+      "date": "2024-04-04",
+      "public": false
+    }
+  ]
+}

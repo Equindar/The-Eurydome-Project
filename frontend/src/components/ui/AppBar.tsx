@@ -1,16 +1,17 @@
 import { useTranslation } from '@/lib/i18n';
+import Link from 'next/link';
 
-interface AppBarProps {
+type AppBarProps = {
   lng: string;
-}
+};
 
 const AppBar = async (props: AppBarProps) => {
   const { t } = await useTranslation(props.lng);
   return (
     <header className="mx-auto max-w-6xl px-4">
-      <nav className="flex items-center justify-between py-4">
-        <h1>{t('title')}</h1>
-        <div className="flex items-center gap-4 dark:text-white">
+      <nav className="sticky top-0 z-10 p-4 drop-shadow-xl dark:bg-slate-600">
+        <div className="mx-auto flex flex-col justify-between gap-4 dark:text-white sm:flex-row">
+          <Link href="/"></Link>
           <p>Home</p>
           <p>Team</p>
           <p>Reviews</p>

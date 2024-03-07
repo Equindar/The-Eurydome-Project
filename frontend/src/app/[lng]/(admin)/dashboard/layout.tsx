@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export default function Layout({ children, params: { lng } }: LayoutProps) {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-red-500 to-red-700 px-4">
       Layout (Admin Dashboard)
       <div>
         <Sidebar
