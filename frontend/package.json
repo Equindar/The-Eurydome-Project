@@ -12,14 +12,14 @@
     "dev:clean": "rimraf package-lock.json node_modules && npm install && npm run dev",
     "format": "prettier --write .",
     "format:check": "prettier --cache --check .",
-    "start": "next start",
+    "i18n:update": "i18next-resources-for-ts interface -i ./src/i18n/en -o ./src/types/i18next.resources.d.ts",
     "lint": "next lint",
+    "start": "next start",
     "size:check": "npm run build && size-limit --why",
     "tsc:check": "tsc",
     "test": "jest --watch",
     "test:all": "npm-run-all --parallel tsc:check test lint format:check",
-    "test:coverage": "jest --collectCoverage",
-    "i18n:update-res": "i18next-resources-for-ts interface -i ./src/app/i18n/locales/en -o ./src/types/i18next.resources.d.ts"
+    "test:coverage": "jest --collectCoverage"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.6",

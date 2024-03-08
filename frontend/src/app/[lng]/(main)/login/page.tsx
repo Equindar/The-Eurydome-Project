@@ -13,5 +13,11 @@ export default async function Login({ params: { lng } }: LoginProps) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
   const { t } = await useTranslation(lng);
 
-  return <div>{t('login.title')}</div>;
+  return (
+    <main className="mx-auto p-4">
+      <div className="grid">
+        <div>{t('login.title')}</div>;
+      </div>
+    </main>
+  );
 }

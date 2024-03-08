@@ -1,7 +1,5 @@
-import TestImage from 'components/TestImage';
-import AppBar from 'components/ui/AppBar';
-import Footer from 'components/ui/Footer';
-import ThemeSwitch from 'components/ui/ThemeSwitch';
+import AppBar from 'components/layout/AppBar';
+import Footer from 'components/layout/Footer';
 import { languages } from 'lib/i18n/settings';
 import React from 'react';
 
@@ -16,14 +14,17 @@ type RootLayoutProps = {
 
 export default function Layout({ children, lng }: RootLayoutProps) {
   return (
-    <div className="bg-gradient-to-r from-slate-100 to-slate-400 dark:from-slate-800 dark:to-slate-900">
+    <>
       <AppBar lng={lng} />
-      <ThemeSwitch />
-      <hr />
-      <TestImage />
-      <hr />
-      {children}
-      <Footer lng={lng} />
-    </div>
+      <div
+        id="page-container"
+        className="relative min-h-screen w-full bg-gradient-to-r from-slate-100 to-slate-400 dark:from-slate-800 dark:to-slate-900"
+      >
+        <div id="content-wrap" className="pb-60">
+          {children}
+        </div>
+        <Footer lng={lng} />
+      </div>
+    </>
   );
 }

@@ -27,7 +27,8 @@
       "components/*": ["./src/components/*"],
       "lib/*": ["./src/lib/*"],
       "test/*": ["./test/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "media/*": ["./public/*"]
     },
     /* Completeness */
     /* Skip type checking all .d.ts files. */

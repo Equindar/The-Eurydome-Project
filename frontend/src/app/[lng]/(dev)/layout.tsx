@@ -1,6 +1,6 @@
+import AppBar from 'components/layout/AppBar';
+import Footer from 'components/layout/Footer';
 import TestImage from 'components/TestImage';
-import AppBar from 'components/ui/AppBar';
-import Footer from 'components/ui/Footer';
 import ThemeSwitch from 'components/ui/ThemeSwitch';
 import { languages } from 'lib/i18n/settings';
 import React from 'react';
@@ -17,7 +17,7 @@ type RootLayoutProps = {
 export default function Layout({ children, lng }: RootLayoutProps) {
   return (
     <div
-      className="bg-gradient-to-r from-cyan-200 to-blue-400
+      className="min-h-screen bg-gradient-to-r from-cyan-200 to-blue-400
     dark:from-cyan-700 dark:to-blue-900"
     >
       <AppBar lng={lng} />
