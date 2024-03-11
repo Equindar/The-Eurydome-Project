@@ -1,37 +1,28 @@
 import './global.css';
-import { Logger } from '@/lib/log/Logger';
+import ThemeProvider from 'components/ThemeProvider';
 import { dir } from 'i18next';
+import { fallbackLng, languages } from 'lib/i18n/settings';
+import { headers } from 'next/headers';
 import React from 'react';
-import { languages } from '../lib/i18n/settings';
-import { LanguageSelect } from './ui/language/LanguageSelect';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
-export default function RootLayout({
-  children,
-  params: { lng },
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-  params: { lng: string };
-}) {
-  const log = new Logger({ name: 'System' });
-  log.info('initializing...!');
-  if (process.env.ENV_FILE != undefined) {
-    log.info(`ENV-file found: ${process.env.ENV_FILE}`);
-  }
-  if (process.env.LOG_LEVEL != undefined) {
-    log.info(`LOG_LEVEL found: ${process.env.LOG_LEVEL}`);
-  }
+  lng: string;
+};
 
+export default function RootLayout({ children, lng }: RootLayoutProps) {
   return (
-    <html lang={lng} dir={dir(lng)}>
-      <head />
+    <html
+      lang={lng}
+      dir={dir(headers().get('Accept-Language') ?? fallbackLng)}
+      suppressHydrationWarning
+    >
       <body>
-        <LanguageSelect />
-        <hr />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

@@ -15,8 +15,7 @@ const initI18next = async (lng: string, ns: string | string[]) => {
     .use(initReactI18next)
     .use(
       resourcesToBackend(
-        (language: string, namespace: string) =>
-          import(`../../app/i18n/locales/${language}/${namespace}.json`),
+        (language: string, namespace: string) => import(`../../i18n/${language}/${namespace}.json`),
       ),
     )
     .init(getOptions(lng, ns));
