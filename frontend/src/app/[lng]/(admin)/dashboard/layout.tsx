@@ -1,6 +1,9 @@
-import Navbar from '@/app/ui/dashboard/Navbar';
-import Sidebar from '@/app/ui/dashboard/Sidebar';
+import Navbar from '@/components/dashboard/Navbar';
+import Sidebar from '@/components/dashboard/Sidebar';
 import { languages } from '@/lib/i18n/settings';
+import AppBar from 'components/layout/AppBar';
+import Footer from 'components/layout/Footer';
+import ThemeSwitch from 'components/ui/ThemeSwitch';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,8 +16,9 @@ export async function generateStaticParams() {
 
 export default function Layout({ children, params: { lng } }: LayoutProps) {
   return (
-    <div>
-      Layout (Admin Dashboard)
+    <div className="min-h-screen bg-gradient-to-br from-red-400 to-red-700 dark:from-red-800 dark:to-red-900">
+      <AppBar lng={lng} />
+      <ThemeSwitch />
       <div>
         <Sidebar
           params={{
@@ -30,6 +34,7 @@ export default function Layout({ children, params: { lng } }: LayoutProps) {
         />
         {children}
       </div>
+      <Footer lng={lng} />
     </div>
   );
 }
