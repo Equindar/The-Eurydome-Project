@@ -36,6 +36,6 @@
     /* Skip type checking .d.ts files that are included with TypeScript. */
     // "skipDefaultLibCheck": true,
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts", "webpack.config.js"],
   "exclude": ["node_modules"]
 }
