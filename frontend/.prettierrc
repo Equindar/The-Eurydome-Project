@@ -1,8 +1,7 @@
 {
   "plugins": [
     "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss",
-    "prettier/plugin-xml"
+    "prettier-plugin-tailwindcss"
   ],
   "useTabs": false,
   "semi": true,

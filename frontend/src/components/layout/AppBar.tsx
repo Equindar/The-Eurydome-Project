@@ -9,7 +9,7 @@ type AppBarProps = {
 const AppBar = async (props: AppBarProps) => {
   const { t } = await useTranslation(props.lng, 'common');
   return (
-    <header className="fixed z-50 mx-auto w-full">
+    <header className="fixed z-50 mx-auto w-full opacity-85">
       <nav className="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
           <a href="https://flowbite.com" className="flex items-center">
