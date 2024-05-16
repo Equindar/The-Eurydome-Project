@@ -7,7 +7,7 @@
     "build": "next build",
     "build:clean": "npm run clean && npm run build",
     "build:analyze": "cross-env ANALYZE=true npm run dev",
-    "build:storybook": "storybook build",
+    "build:storybook": "storybook build -o build/storybook",
     "clean": "rimraf ./build",
     "dev": "next dev",
     "dev:clean": "rimraf package-lock.json node_modules && npm install && npm run dev",
