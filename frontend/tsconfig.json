@@ -22,27 +22,12 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "i18n/*": ["./src/i18n/*"],
-      "components/*": ["./src/components/*"],
-      "lib/*": ["./src/lib/*"],
-      "test/*": ["./test/*"],
-      "@/*": ["./src/*"],
-      "media/*": ["./public/*"]
-    },
     /* Completeness */
     /* Skip type checking all .d.ts files. */
     "skipLibCheck": true
     /* Skip type checking .d.ts files that are included with TypeScript. */
     // "skipDefaultLibCheck": true,
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "build/types/**/*.ts",
-    "webpack.config.js"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "build/types/**/*.ts", "webpack.config.js"],
   "exclude": ["node_modules"]
 }
