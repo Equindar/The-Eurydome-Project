@@ -18,7 +18,7 @@ export default async function Page({ params: { lng } }: PageProps) {
 
   return (
     <main className="mx-auto">
-      <section className="pt-20">
+      <section>
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 sm:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="mb-4 inline-block max-w-2xl bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600 bg-clip-text text-4xl font-extrabold leading-none tracking-tight text-transparent md:text-5xl xl:text-6xl">

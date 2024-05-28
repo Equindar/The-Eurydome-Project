@@ -32,10 +32,37 @@ export default async function Page({ params: { lng } }: PageProps) {
           </div>
         </div>
       </section>
-      <div className="grid gap-2 sm:grid-cols-3">
-        <div className="h-96 rounded-lg bg-orange-500 shadow">Content #1</div>
+      <div className="mx-auto grid max-w-screen-xl gap-6 sm:grid-cols-3">
+        <div className="rounded-lg bg-orange-500 p-3 shadow">
+          <h1 className="text-xl font-bold">Content #1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid numquam est
+            quam inventore, sapiente autem laudantium ut molestiae dolore pariatur voluptate
+            eligendi quo odio consequuntur eum! Nesciunt, impedit voluptates?
+          </p>
+          <p className="italic">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid numquam est
+            quam inventore, sapiente autem laudantium ut molestiae dolore pariatur voluptate
+            eligendi quo odio consequuntur eum! Nesciunt, impedit voluptates?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid numquam est
+            quam inventore, sapiente autem laudantium ut molestiae dolore pariatur voluptate
+            eligendi quo odio consequuntur eum! Nesciunt, impedit voluptates?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid numquam est
+            quam inventore, sapiente autem laudantium ut molestiae dolore pariatur voluptate
+            eligendi quo odio consequuntur eum! Nesciunt, impedit voluptates?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid numquam est
+            quam inventore, sapiente autem laudantium ut molestiae dolore pariatur voluptate
+            eligendi quo odio consequuntur eum! Nesciunt, impedit voluptates?
+          </p>
+        </div>
         <div className="rounded-lg bg-red-600 shadow">Content #2</div>
-        <div className="hidden rounded-lg bg-cyan-700 shadow sm:block">Xontent #3</div>
+        <div className="hidden rounded-lg bg-cyan-700 shadow sm:block">Content #3</div>
       </div>
     </main>
   );

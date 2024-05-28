@@ -20,7 +20,7 @@ export default function Layout({ children, lng }: RootLayoutProps) {
         id="page-container"
         className="relative min-h-screen w-full bg-gradient-to-r from-slate-100 to-slate-400 dark:from-slate-800 dark:to-slate-900"
       >
-        <div id="content-wrap" className="pb-60">
+        <div id="content-wrap" className="px-4 py-24">
           {children}
         </div>
         <Footer lng={lng} />

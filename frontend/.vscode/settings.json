@@ -1,4 +1,9 @@
 {
+  "explorer.compactFolders": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.xml": "html",
+    "*.svg": "html"
+  }
 }
