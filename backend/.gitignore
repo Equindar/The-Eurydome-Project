@@ -9,6 +9,7 @@
 
 # --- documentation
 /docs
+/docs/*
 
 # --- authentification / keys
 *.pem
