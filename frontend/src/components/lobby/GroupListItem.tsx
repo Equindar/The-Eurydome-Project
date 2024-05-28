@@ -18,7 +18,7 @@ export default function GroupListItem({ variant, ...props }: GroupListProps) {
         {props.data.members.length != 0 ? (
           <>
             {props.data.members.map((item) => {
-              return <li>{item}</li>;
+              return <li key={item}>{item}</li>;
             })}
           </>
         ) : (

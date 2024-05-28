@@ -5,7 +5,7 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
  */
 const nextConfig = {
   distDir: 'build',
-  
+
   webpack: (config) => {
     // Add rule for SVG files
     config.module.rules.push({

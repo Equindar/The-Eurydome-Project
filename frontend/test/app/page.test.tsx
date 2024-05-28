@@ -1,7 +1,7 @@
 // Test Subject
+import { describe } from 'node:test';
 import Page from '@/app/[lng]/(main)/page';
 import { render, screen } from '@testing-library/react';
-import { describe } from 'node:test';
 
 describe('Test Suite: Basic-Tests', () => {
   test.skip('Testing h1-Tag in Page', async () => {

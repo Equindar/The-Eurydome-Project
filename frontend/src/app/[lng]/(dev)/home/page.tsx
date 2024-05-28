@@ -15,9 +15,9 @@ export default async function Page(props: PageProps) {
   const { t } = await useTranslation(lng, 'dev');
 
   return (
-      <main>
-        <h1>{t('dev:home.title')}</h1>
-        <div>...</div>
-      </main>
+    <main>
+      <h1>{t('dev:home.title')}</h1>
+      <div>...</div>
+    </main>
   );
 }

@@ -3,16 +3,16 @@ import Footer from 'components/layout/Footer';
 import { languages } from 'lib/i18n/settings';
 import React from 'react';
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: { lng: string };
+}
+
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
-type RootLayoutProps = {
-  children: React.ReactNode;
-  lng: string;
-};
-
-export default function Layout({ children, lng }: RootLayoutProps) {
+export default function Layout({ children, params: { lng } }: RootLayoutProps) {
   return (
     <>
       <AppBar lng={lng} />
