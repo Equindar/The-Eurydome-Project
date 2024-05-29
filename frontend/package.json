@@ -24,17 +24,19 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "accept-language": "^3.0.18",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "i18next": "^23.9.0",
     "i18next-browser-languagedetector": "7.2.0",
     "i18next-resources-to-backend": "^1.2.0",
+    "lucide-react": "^0.379.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
     "react-i18next": "^14.0.5",
-    "tailwind-merge": "^2.2.1",
+    "react-router-dom": "^6.18.0",
+    "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "tslog": "^4.8.4-0"
   },

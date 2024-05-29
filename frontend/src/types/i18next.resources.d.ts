@@ -1,31 +1,31 @@
 interface Resources {
   admin: {
     dashboard: {
-      title: 'Dashboard';
       navbar: {
         title: 'Navbar Title';
       };
       sidebar: {
         title: 'Sidebar Title';
       };
+      title: 'Dashboard';
     };
   };
   common: {
-    title: 'LunarEclipse';
     'back-to-home': 'Zurück zur Hauptseite';
     counter_one: 'eines ausgewählt';
     counter_other: '{{count}} ausgewählt';
     counter_zero: 'keines ausgewählt';
     h1: 'Eine client Seite, um das client-seitige i18n zu demonstrieren';
-    'to-second-client-page': 'zur zweiten client Seite';
+    login: {
+      title: 'Login';
+    };
     navigation: {
       home: 'Home';
       review: 'Reviews';
       team: 'Team';
     };
-    login: {
-      title: 'Login';
-    };
+    title: 'LunarEclipse';
+    'to-second-client-page': 'zur zweiten client Seite';
   };
   dev: {
     home: {
@@ -35,8 +35,8 @@ interface Resources {
   main: {
     index: {
       'hero-section': {
-        'title-1': 'Explore the magic world of Meridianis';
         'subtitle-1': 'Wander alone or together with other players the landscape, cross plains, crest mountains or explore dark forests.';
+        'title-1': 'Explore the magic world of Meridianis';
       };
     };
   };

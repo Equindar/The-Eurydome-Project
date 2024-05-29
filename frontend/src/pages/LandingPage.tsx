@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 
 const LandingPage = () => {
@@ -5,7 +6,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <h1>{t('home')}</h1>
+      <Button variant="outline">Test</Button>
     </>
   );
 };

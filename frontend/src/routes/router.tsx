@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Layout from '../layouts/Layout';
 import HomePage from '../pages/HomePage';
 import LandingPage from '../pages/LandingPage';
 import PageNotFound from '../pages/PageNotFound';
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
       //            { path: "/signup", element: <SignupPage /> },
     ],
     // public routes
-    // element: <Layout theme={customTheme} />,
+    element: <Layout />,
     errorElement: <PageNotFound />,
   },
   // restricted routes
