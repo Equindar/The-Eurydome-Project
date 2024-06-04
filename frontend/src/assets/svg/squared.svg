@@ -1,6 +1,6 @@
 <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#ffffff">
-    <g opacity="0.08" stroke="var(--geist-foreground)" stroke-dasharray="1 1">
+    <g opacity="0.08" stroke-dasharray="1 1">
         <line x2="392" y1="15.5" y2="15.5"></line>
         <line x2="392" y1="31.5" y2="31.5"></line>
         <line x2="392" y1="47.5" y2="47.5"></line>

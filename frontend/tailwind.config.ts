@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        test: "url('/images/background.webp')",
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

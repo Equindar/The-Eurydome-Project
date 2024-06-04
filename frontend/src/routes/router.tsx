@@ -1,22 +1,25 @@
-import { createBrowserRouter } from 'react-router-dom';
+import Test from '@/pages/Test';
+import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import Layout from '../layouts/Layout';
-import HomePage from '../pages/HomePage';
-import LandingPage from '../pages/LandingPage';
-import PageNotFound from '../pages/PageNotFound';
+import Home from '../pages/Home';
+import Landing from '../pages/Landing';
+import NotFound from '../pages/NotFound';
 
-const router = createBrowserRouter([
+const routes: RouteObject[] = [
   {
+    // public routes
+    path: '/',
+    element: <Layout />,
+    errorElement: <NotFound />,
     children: [
-      { element: <LandingPage />, index: true },
+      { element: <Landing />, index: true },
+      { element: <Home />, path: '/home' },
+      { element: <Test />, path: '/test' },
       //   { action: handleLogin, element: <LoginForm />, path: '/login' },
       //            { path: "/signup", element: <SignupPage /> },
     ],
-    // public routes
-    element: <Layout />,
-    errorElement: <PageNotFound />,
   },
-  // restricted routes
-  { element: <HomePage />, path: '/home' },
-]);
+];
 
+const router = createBrowserRouter(routes);
 export default router;
