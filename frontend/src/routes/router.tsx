@@ -1,3 +1,4 @@
+import Blog from '@/pages/Blog';
 import Test from '@/pages/Test';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import Layout from '../layouts/Layout';
@@ -15,6 +16,8 @@ const routes: RouteObject[] = [
       { element: <Landing />, index: true },
       { element: <Home />, path: '/home' },
       { element: <Test />, path: '/test' },
+      { element: <Blog />, path: '/blog' },
+
       //   { action: handleLogin, element: <LoginForm />, path: '/login' },
       //            { path: "/signup", element: <SignupPage /> },
     ],
