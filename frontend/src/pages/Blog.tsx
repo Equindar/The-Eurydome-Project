@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
@@ -7,7 +6,7 @@ const Blog = () => {
 
   return (
     <div className="card bg-slate-400 p-5">
-      <h1 className="m-5 bg-cyan-400 p-4">Blog</h1>
+      <h1 className="m-5 bg-cyan-400 p-4">{t('title')}</h1>
       The Dev-Blog will be here.
       <p className="read-the-docs">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus vel temporibus
