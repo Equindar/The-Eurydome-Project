@@ -11,6 +11,8 @@ const Layout = () => {
       <div className="relative z-0">
         <Outlet />
       </div>
+      ></div>
+      <Outlet />
     </div>
   );
 };

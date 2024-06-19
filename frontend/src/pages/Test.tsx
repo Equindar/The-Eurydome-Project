@@ -1,4 +1,12 @@
 import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import ModeFrame from '@/components/ui/mode-frame';
 import { ToastAction } from '@/components/ui/toast';
 import { useToast } from '@/hooks/use-toast';
@@ -10,27 +18,21 @@ const Test = () => {
 
   return (
     <>
-      <div className="z-0 block h-max w-full bg-[url('/images/background.webp')] blur-sm"></div>
-      <div className="z-10 blur-none">test</div>
-      <Button onClick={() => {
-        toast({
-          title: "Toast Test",
-          description: "This is the description",
-        })}} />
-        <Button
-      variant="outline"
-      onClick={() => {
-        toast({
-          variant: "destructive",
-          title: "Uh oh! Something went wrong.",
-          description: "There was a problem with your request.",
-          action: <ToastAction altText="Try again">Try again</ToastAction>,
-        })
-      }}
-    >
-      Show Toast
-    </Button>
       <ModeFrame name="Demo" description="current state of development" />
+      <div className="z-10 flex h-screen items-center justify-center p-10 blur-none">
+        <Card className="">
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
+      </div>
     </>
   );
 };
