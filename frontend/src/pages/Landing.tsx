@@ -1,11 +1,11 @@
-import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 
 const Landing = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className="relative z-0 grid grid-cols-2 gap-4">
+      <div>&nbsp;</div>
       <section className="bg-slate-200 opacity-80 shadow dark:border dark:border-gray-700 dark:bg-gray-800">
         <div className="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
           <img className="mr-2 h-8 w-8" src="images/logo-no-bg.png" alt="logo" />
@@ -90,7 +90,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

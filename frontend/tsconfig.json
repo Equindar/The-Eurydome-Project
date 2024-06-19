@@ -33,5 +33,5 @@
     // "skipDefaultLibCheck": true,
   },
   "include": ["**/*.ts", "**/*.tsx", "build/types/**/*.ts", "webpack.config.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "backup"]
 }
