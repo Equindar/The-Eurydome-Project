@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import QuestWidget from '@/components/quests/QuestWidget';
 import {
   Card,
   CardContent,
@@ -32,6 +32,7 @@ const Test = () => {
             <p>Card Footer</p>
           </CardFooter>
         </Card>
+        <QuestWidget />
       </div>
     </>
   );

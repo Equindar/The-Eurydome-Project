@@ -21,6 +21,9 @@ const config = {
       backgroundImage: {
         test: "url('/images/background.webp')",
       },
+      colors: {
+        equindar_blue: '#1fb6ff',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
