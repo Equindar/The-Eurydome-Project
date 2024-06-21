@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import LocationBanner from '@/components/ui/location-banner';
 import ModeFrame from '@/components/ui/mode-frame';
 import { useTranslation } from 'react-i18next';
 
@@ -16,6 +17,10 @@ const Test = () => {
   return (
     <>
       <ModeFrame name="Demo" description="current state of development" />
+      <LocationBanner
+        title="Verborgener Wald"
+        subtitle="Hier sind so einige verloren gegangen. Pass auf dich auf..."
+      />
       <div className="z-10 flex h-screen items-center justify-center p-10 blur-none">
         <Card className="">
           <CardHeader>
