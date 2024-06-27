@@ -1,3 +1,4 @@
+import { ModeToggle } from '@/components/ModeToggle';
 import QuestWidget from '@/components/quests/QuestWidget';
 import {
   Card,
@@ -19,13 +20,13 @@ const Test = () => {
 
   return (
     <>
-      <ModeFrame name="Demo" description="current state of development" />
       <LocationBanner
         title="Verborgener Wald"
         subtitle="Hier sind so einige verloren gegangen. Pass auf dich auf..."
       />
+
       <div className="z-10 flex h-screen items-center justify-center p-10 blur-none">
-        <Card className="">
+        <Card className=' bg-background text-foreground'>
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description</CardDescription>
@@ -38,6 +39,7 @@ const Test = () => {
           </CardFooter>
         </Card>
         <QuestWidget />
+        <ModeToggle />
       </div>
     </>
   );

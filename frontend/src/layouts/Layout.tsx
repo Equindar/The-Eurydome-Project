@@ -8,10 +8,6 @@ const Layout = () => {
         className="-z-1 absolute h-full min-w-full bg-[url('/images/background.webp')] bg-cover blur-sm"
       >
       </div>
-      <div className="relative z-0">
-        <Outlet />
-      </div>
-      ></div>
       <Outlet />
     </div>
   );

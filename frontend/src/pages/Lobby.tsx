@@ -1,6 +1,6 @@
 const Lobby = () => {
   return (
-    <main className="mx-auto max-w-screen-xl pt-16 z-10">
+    <main className="relative mx-auto max-w-screen-xl pt-16 z-10">
       <div className="grid gap-2 sm:grid-cols-2">
         <div className="rounded-lg bg-orange-500 p-4 shadow">
           Liste von Gruppen

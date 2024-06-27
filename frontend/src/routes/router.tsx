@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import Landing from '../pages/Landing';
 import NotFound from '../pages/NotFound';
 import Lobby from '@/pages/Lobby';
+import Inventory from '@/pages/Inventory';
 
 const routes: RouteObject[] = [
   {
@@ -19,6 +20,8 @@ const routes: RouteObject[] = [
       { element: <Test />, path: '/test' },
       { element: <Blog />, path: '/blog' },
       { element: <Lobby />, path: '/lobby' },
+      { element: <Inventory />, path: '/inventory' },
+      
       
 
       //   { action: handleLogin, element: <LoginForm />, path: '/login' },
