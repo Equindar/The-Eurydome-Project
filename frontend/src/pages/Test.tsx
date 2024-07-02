@@ -1,4 +1,3 @@
-import { ModeToggle } from '@/components/ModeToggle';
 import QuestWidget from '@/components/quests/QuestWidget';
 import {
   Card,
@@ -9,8 +8,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import LocationBanner from '@/components/ui/location-banner';
-import ModeFrame from '@/components/ui/mode-frame';
-import { ToastAction } from '@/components/ui/toast';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
 
@@ -26,7 +23,7 @@ const Test = () => {
       />
 
       <div className="z-10 flex h-screen items-center justify-center p-10 blur-none">
-        <Card className=' bg-background text-foreground'>
+        <Card className=" bg-background text-foreground">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description</CardDescription>
@@ -39,7 +36,6 @@ const Test = () => {
           </CardFooter>
         </Card>
         <QuestWidget />
-        <ModeToggle />
       </div>
     </>
   );

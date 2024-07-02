@@ -27,7 +27,6 @@ const config = {
       '6': '6px',
       '8': '8px',
       '16': '16px',
-      
     },
     extend: {
       backgroundImage: {
@@ -37,7 +36,8 @@ const config = {
         equindar_blue: '#1fb6ff',
         primary: '#5c6ac4',
         secondary: '#ecc94b',
-        
+        background: '#ffffff',
+        foreground: '#eeeeee',
       },
       keyframes: {
         'accordion-down': {
@@ -49,10 +49,10 @@ const config = {
           to: { height: '0' },
         },
         fadeOut: {
-          '0%': {opacity: 1},
+          '0%': { opacity: 1 },
           '70%': { opacity: 1 },
-          '100%': { opacity: 0 } 
-        }
+          '100%': { opacity: 0 },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
