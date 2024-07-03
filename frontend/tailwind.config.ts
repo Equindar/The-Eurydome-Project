@@ -10,6 +10,22 @@ const config = {
         '2xl': '1400px',
       },
     },
+<<<<<<< Updated upstream
+=======
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+      '16': '16px',
+    },
+    backgroundImage: {
+      test: "url('/images/background.webp')",
+    },
+>>>>>>> Stashed changes
     extend: {
       colors: {
         border: 'hsl(var(--border))',
