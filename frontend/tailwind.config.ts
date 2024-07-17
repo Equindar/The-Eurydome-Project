@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 // import '@/assets/themes/default';
+const colors = require('tailwindcss/colors');
 
 const config = {
   darkMode: ['class'],
@@ -33,11 +34,17 @@ const config = {
         test: "url('/images/background.webp')",
       },
       colors: {
+        background: {
+          dark: colors.black,
+          DEFAULT: colors.white,
+          light: colors.white,
+        },
         equindar_blue: '#1fb6ff',
         primary: '#5c6ac4',
         secondary: '#ecc94b',
-        background: '#ffffff',
         foreground: '#eeeeee',
+        equindar_red: '#ff0000',
+        legendary: colors.orange,
       },
       keyframes: {
         'accordion-down': {

@@ -1,0 +1,44 @@
+.progressbar {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.progressbar__inner {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background: linear-gradient(
+        to right,
+        red 0%,
+        orange 25%,
+        yellow 50%,
+        greenyellow 75%,
+        green 100%
+    );
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.progressbar__fill {
+    background-color: #646464;
+    width: 0%;
+    transition: all 0.3s ease-out;
+}
+
+.progressbar__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+}
