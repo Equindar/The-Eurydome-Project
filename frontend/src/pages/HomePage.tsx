@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const HomePage = () => {
   const { t } = useTranslation();
   const [count, setCount] = useState(0);
 
@@ -22,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

@@ -2,7 +2,7 @@ const Lobby = () => {
   return (
     <main className="relative z-10 mx-auto max-w-screen-xl pt-16">
       <div className="grid gap-2 sm:grid-cols-2">
-        <div className="rounded-lg bg-orange-500 p-4 shadow">Liste von Gruppen</div>
+        <div className="bg-primary-dark text-mycolor rounded-lg p-4 shadow">Liste von Gruppen</div>
         <div className="flex flex-col px-4">
           <div className="mb-4 w-full rounded-lg bg-red-600 p-4 shadow">
             Gruppen-Aktion beitreten / verlassen

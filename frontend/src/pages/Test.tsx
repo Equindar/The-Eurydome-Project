@@ -10,8 +10,8 @@ import {
 } from '@/components/ui/card';
 import LocationBanner from '@/components/ui/location-banner';
 import { useToast } from '@/hooks/use-toast';
-import { useTranslation } from 'react-i18next';
 import { MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Test = () => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ const Test = () => {
       />
 
       <div className="z-10 flex h-screen items-center justify-center p-10 blur-none">
-        <Card className=" bg-background text-black">
+        <Card className="bg-background text-black dark:text-white">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description</CardDescription>
@@ -35,7 +35,7 @@ const Test = () => {
           </CardContent>
           <CardFooter>
             <p>Card Footer</p>
-        <MessageCircle className="dark:text-white text-black h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <MessageCircle className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 text-black transition-all dark:-rotate-90 dark:scale-0 dark:text-white" />
           </CardFooter>
         </Card>
         <QuestWidget />

@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 
-const Blog = () => {
+const BlogPage = () => {
   const { t } = useTranslation();
 
   return (
@@ -18,4 +18,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;

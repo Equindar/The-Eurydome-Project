@@ -1,24 +1,24 @@
-import Blog from '@/pages/Blog';
+import BlogPage from '@/pages/BlogPage';
 import Inventory from '@/pages/Inventory';
 import Lobby from '@/pages/Lobby';
 import Test from '@/pages/Test';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import Layout from '../layouts/Layout';
-import Home from '../pages/Home';
-import Landing from '../pages/Landing';
-import NotFound from '../pages/NotFound';
+import HomePage from '../pages/HomePage';
+import LandingPage from '../pages/LandingPage';
+import NotFoundPage from '../pages/NotFoundPage';
 
 const routes: RouteObject[] = [
   {
     // public routes
     path: '/',
     element: <Layout />,
-    errorElement: <NotFound />,
+    errorElement: <NotFoundPage />,
     children: [
-      { element: <Landing />, index: true },
-      { element: <Home />, path: '/home' },
+      { element: <LandingPage />, index: true },
+      { element: <HomePage />, path: '/home' },
       { element: <Test />, path: '/test' },
-      { element: <Blog />, path: '/blog' },
+      { element: <BlogPage />, path: '/blog' },
       { element: <Lobby />, path: '/lobby' },
       { element: <Inventory />, path: '/inventory' },
 

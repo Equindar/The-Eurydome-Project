@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-// import '@/assets/themes/default';
+import './src/assets/themes/default';
+
 const colors = require('tailwindcss/colors');
 
 const config = {
@@ -39,8 +40,11 @@ const config = {
           DEFAULT: colors.white,
           light: colors.white,
         },
-        equindar_blue: '#1fb6ff',
-        primary: '#5c6ac4',
+        primary: {
+          dark: '#006270',
+          DEFAULT: '#009394',
+          light: '#00E0C7',
+        },
         secondary: '#ecc94b',
         foreground: '#eeeeee',
         equindar_red: '#ff0000',
