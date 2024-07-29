@@ -1,17 +1,15 @@
 import './assets/globals.css';
 import { RouterProvider } from 'react-router-dom';
-import router from './routes/router';
-import { Toaster } from './components/ui/toaster';
 import { ThemeProvider } from './components/ThemeProvider';
+import { Toaster } from './components/ui/toaster';
+import router from './routes/router';
 
 function App() {
   return (
-
-<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
       <Toaster />
-</ThemeProvider>
-
+    </ThemeProvider>
   );
 }
 
