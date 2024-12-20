@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 }));
 
 // Routes
-//app.use('/', routes);
+app.use('/', routes);
 
 app.get('/', (request: Request, response: Response) => {
   response.send(request.query);

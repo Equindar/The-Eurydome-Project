@@ -1,4 +1,3 @@
-import Logger from 'core/Logger';
 import express from 'express';
 import status from './status/status';
 
@@ -12,8 +11,6 @@ const router = express.Router();
  * @param no params required
  * @returns the status of the server
  */
-router.use('/status', status);
-
-Logger.info('Express Router: /');
+router.get('/status', status);
 
 export default router;

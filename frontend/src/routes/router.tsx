@@ -7,6 +7,7 @@ import Layout from '../layouts/Layout';
 import HomePage from '../pages/HomePage';
 import LandingPage from '../pages/LandingPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import Canvas from '@/pages/Canvas';
 
 const routes: RouteObject[] = [
   {
@@ -21,6 +22,8 @@ const routes: RouteObject[] = [
       { element: <BlogPage />, path: '/blog' },
       { element: <Lobby />, path: '/lobby' },
       { element: <Inventory />, path: '/inventory' },
+      { element: <Canvas />, path: '/canvas' },
+
 
       //   { action: handleLogin, element: <LoginForm />, path: '/login' },
       //            { path: "/signup", element: <SignupPage /> },

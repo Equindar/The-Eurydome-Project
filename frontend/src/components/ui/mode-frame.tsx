@@ -6,7 +6,7 @@ type ModeFrameProps = {
 
 const ModeFrame = (props: ModeFrameProps) => {
   return (
-    <div className="fixed z-10 h-screen w-screen p-5">
+    <div className="fixed z-10 h-screen w-screen p-5 box-border">
       <div className="relative box-border h-full w-full rounded-lg border-4 border-gray-700">
         <div className="absolute bottom-0 right-0 rounded-tl-lg bg-slate-700 p-2 text-white">
           <h1 className="font-bold">Mode: {props.name}</h1>

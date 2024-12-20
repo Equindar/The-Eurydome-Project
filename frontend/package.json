@@ -41,6 +41,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.0.5",
     "react-router-dom": "^6.18.0",
+    "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "tslog": "^4.8.4-0"

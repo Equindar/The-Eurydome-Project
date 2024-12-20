@@ -22,7 +22,7 @@ function RegistrationForm() {
         <Button variant={'ghost'}>zurücksetzen</Button>
       </CardFooter>
     </Card>
-  );
+  ); 
 }
 
 export default RegistrationForm;
