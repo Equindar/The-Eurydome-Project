@@ -34,7 +34,7 @@ const dailyRotateFile = new DailyRotateFile({
 });
 // Logger
 const test = new DailyRotateFile({
-  level: logLevel,
+  level: "error",
   // @ts-ignore
   filename: dir + '/%DATE% error.log',
   datePattern: 'YYYY-MM-DD',
@@ -43,11 +43,9 @@ const test = new DailyRotateFile({
   maxSize: '20m',
   maxFiles: '14d',
   format: format.combine(
-    format.colorize({ all: true }),
     format.timestamp({
-      format: 'YYYY-MM-DD hh:mm:ss.SSS Z'
+      format: 'YYYY-MM-DD HH:mm:ss.SSS Z'
     }),
-    format.align(),
     format.errors({ stack: true }),
     format.printf((info) => `[${info.timestamp}] ${info.level}: ${info.message}`)
   ),
@@ -60,7 +58,7 @@ export const ConsoleLogger = createLogger({
   format: format.combine(
     format.colorize({ all: true }),
     format.timestamp({
-      format: 'YYYY-MM-DD hh:mm:ss.SSS Z'
+      format: 'YYYY-MM-DD HH:mm:ss.SSS Z'
     }),
     format.align(),
     format.errors({ stack: true }),
