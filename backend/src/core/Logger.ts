@@ -1,5 +1,5 @@
-import { environment, logDirectory } from '../config';
-import { createLogger, transports, format } from 'winston';
+import { environment, logDirectory, timezone } from '../config';
+import { createLogger, transports, format, error } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 import fs from 'fs';
 import path from 'path';
@@ -15,6 +15,8 @@ if (!fs.existsSync(dir)) {
 
 const logLevel = environment === 'development' ? 'debug' : 'warn';
 
+// --- DailyRotateFile
+// Logger
 const dailyRotateFile = new DailyRotateFile({
   level: logLevel,
   // @ts-ignore
@@ -27,20 +29,56 @@ const dailyRotateFile = new DailyRotateFile({
   format: format.combine(
     format.timestamp(),
     format.errors({ stack: true }),
-    format.simple(),
+    format.json(),
   ),
 });
+// Logger
+const test = new DailyRotateFile({
+  level: "error",
+  // @ts-ignore
+  filename: dir + '/%DATE% error.log',
+  datePattern: 'YYYY-MM-DD',
+  zippedArchive: true,
+  handleExceptions: true,
+  maxSize: '20m',
+  maxFiles: '14d',
+  format: format.combine(
+    format.timestamp({
+      format: 'YYYY-MM-DD HH:mm:ss.SSS Z'
+    }),
+    format.errors({ stack: true }),
+    format.printf((info) => `[${info.timestamp}] ${info.level}: ${info.message}`)
+  ),
+});
+// Events
+dailyRotateFile.on('new', (filename) => { console.log(`new file ${filename} created...`) })
 
+export const ConsoleLogger = createLogger({
+  level: logLevel,
+  format: format.combine(
+    format.colorize({ all: true }),
+    format.timestamp({
+      format: 'YYYY-MM-DD HH:mm:ss.SSS Z'
+    }),
+    format.align(),
+    format.errors({ stack: true }),
+    format.printf((info) => `[${info.timestamp}] ${info.level}: ${info.message}`)
+  ),
+  transports: [new transports.Console()],
+});
+
+// --- Default-Logger
 export default createLogger({
   level: logLevel,
   format: format.combine(
     format.errors({ stack: true }),
-    format.prettyPrint(),
+    format.simple(),
   ),
   transports: [
     new transports.Console(),
     dailyRotateFile,
+    test
   ],
-  exceptionHandlers: [dailyRotateFile],
+  exceptionHandlers: [dailyRotateFile, test],
   exitOnError: false, // do not exit on handled exceptions
 });

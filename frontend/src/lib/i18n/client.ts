@@ -1,10 +1,7 @@
-'use client';
-
 import i18next, { FlatNamespace, KeyPrefix } from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { useEffect, useState } from 'react';
-import { useCookies } from 'react-cookie';
 import {
   FallbackNs,
   initReactI18next,
@@ -42,7 +39,6 @@ export function useTranslation<
   ns?: Ns,
   options?: UseTranslationOptions<KPrefix>,
 ): UseTranslationResponse<FallbackNs<Ns>, KPrefix> {
-  const [cookies, setCookie] = useCookies([cookieName]);
   const ret = useTranslationOrg(ns, options);
   const { i18n } = ret;
   if (runsOnServerSide && lng && i18n.resolvedLanguage !== lng) {
@@ -61,10 +57,6 @@ export function useTranslation<
       i18n.changeLanguage(lng);
     }, [lng, i18n]);
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    useEffect(() => {
-      if (cookies.i18next === lng) return;
-      setCookie(cookieName, lng, { path: '/' });
-    }, [lng, cookies.i18next, setCookie]);
   }
   return ret;
 }

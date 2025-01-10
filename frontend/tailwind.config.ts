@@ -1,7 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+import './src/assets/themes/default';
+
+const colors = require('tailwindcss/colors');
+
 const config = {
-  darkMode: 'class',
-  content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
+  darkMode: ['class'],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+  ],
+  prefix: '',
   theme: {
     container: {
       center: true,
@@ -10,8 +20,6 @@ const config = {
         '2xl': '1400px',
       },
     },
-<<<<<<< Updated upstream
-=======
     borderWidth: {
       DEFAULT: '1px',
       '0': '0',
@@ -22,50 +30,25 @@ const config = {
       '8': '8px',
       '16': '16px',
     },
-    backgroundImage: {
-      test: "url('/images/background.webp')",
-    },
->>>>>>> Stashed changes
     extend: {
-      colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
-        },
+      backgroundImage: {
+        test: "url('/images/background.webp')",
       },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+      colors: {
+        background: {
+          dark: colors.black,
+          DEFAULT: colors.white,
+          light: colors.white,
+        },
+        primary: {
+          dark: '#006270',
+          DEFAULT: '#009394',
+          light: '#00E0C7',
+        },
+        secondary: '#ecc94b',
+        foreground: '#eeeeee',
+        equindar_red: '#ff0000',
+        legendary: colors.orange,
       },
       keyframes: {
         'accordion-down': {
@@ -76,14 +59,20 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '70%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        fade: 'fadeOut 5s ease-out',
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  plugins: [require('tailwindcss-animate')],
 };
 
 export default config;
