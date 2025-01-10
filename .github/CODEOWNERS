@@ -7,8 +7,7 @@
 * @Equindar
 
 # Include specific ownership
-/frontend @Equindar
-/backend @BlackLNX
+
 
 # Exclude general ownership
 /docs 
