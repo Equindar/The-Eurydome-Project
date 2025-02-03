@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
-import router from 'routes';
+import express, { Request, Response } from 'express';
 
+const router = express.Router();
 
 router.get('/', (_req: Request, res: Response) => {
     res.setHeader("Content-Type", "application/json");

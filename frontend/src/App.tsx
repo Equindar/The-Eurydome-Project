@@ -1,15 +1,16 @@
-import './assets/globals.css';
 import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './components/ThemeProvider';
-import { Toaster } from './components/ui/toaster';
+import { Suspense } from 'react';
 import router from './routes/router';
+import './lib/i18n';
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-      <Toaster />
-    </ThemeProvider>
+    <Suspense>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <RouterProvider router={router} />
+        </ThemeProvider>
+    </Suspense>
   );
 }
 

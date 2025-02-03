@@ -1,4 +1,4 @@
-import { defaultNS } from '../../backup/src/lib/i18n/settings';
+import { defaultNS } from '@/lib/i18n/settings';
 import Resources from './i18next.resources';
 
 declare module 'i18next' {

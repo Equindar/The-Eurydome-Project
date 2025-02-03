@@ -1,8 +1,6 @@
 import LoginForm from '@/components/login/LoginForm';
-import { useTranslation } from 'react-i18next';
 
 const LandingPage = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="relative z-0 grid gap-4 md:grid-cols-2">

@@ -13,6 +13,9 @@ export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS)
     fallbackNS: defaultNS,
     defaultNS,
     ns,
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    }
   };
 }
 

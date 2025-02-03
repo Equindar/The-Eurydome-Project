@@ -17,7 +17,7 @@ const HomePage = () => {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-      <Button variant="outline">Button</Button>
+      <Button variant="outline">{t('title')}</Button>
     </div>
   );
 };
