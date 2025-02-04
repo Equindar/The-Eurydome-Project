@@ -6,14 +6,14 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { createNoise2D } from 'simplex-noise';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
+import { createNoise2D } from 'simplex-noise';
 
 const Canvas = () => {
-  var canvas: HTMLCanvasElement = document.getElementById("map");
+  var canvas: HTMLCanvasElement = document.getElementById('map');
 
   const { t } = useTranslation();
   const { toast } = useToast();
@@ -27,14 +27,10 @@ const Canvas = () => {
   console.log(noise2D(0, 4));
 
   var ctx = canvas.getContext('2d');
-  ctx.lineCap = "round";
+  ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
   ctx.strokeStyle = 'black';
-    context.lineWidth = 1;
-  
-
-
-
+  context.lineWidth = 1;
 
   return (
     <main className="relative z-10 mx-auto max-w-screen-xl">
@@ -45,13 +41,16 @@ const Canvas = () => {
             <CardDescription>Karte mit Perlin Noise</CardDescription>
           </CardHeader>
           <CardContent>
-            <canvas id="map" width={400} height={400} className='bg-background-light dark:bg-background-dark border border-black dark:border-white'>
-
-            </canvas>
+            <canvas
+              id="map"
+              width={400}
+              height={400}
+              className="border border-black bg-background-light dark:border-white dark:bg-background-dark"
+            ></canvas>
           </CardContent>
           <CardFooter className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="seed">Seed</Label>
-            <Input id="seed" type="text" value="Test"/>
+            <Input id="seed" type="text" value="Test" />
           </CardFooter>
         </Card>
       </div>

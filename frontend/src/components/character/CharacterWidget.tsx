@@ -1,6 +1,6 @@
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 import { Character } from '@/types/Character';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import ProgressBar from '@/components/ProgressBar/ProgressBar'
 
 interface CharacterWidgetProps {
   character?: Character;
@@ -17,7 +17,9 @@ const CharacterWidget = (props: CharacterWidgetProps) => {
         </Avatar>
       </div>
       <ul className="relative">
-        <li><ProgressBar amount='87' /></li>
+        <li>
+          <ProgressBar amount="87" />
+        </li>
         <li>Quest #2</li>
         <li>Quest #3</li>
       </ul>

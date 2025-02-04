@@ -4,5 +4,22 @@
       "title-1": "Erkunde die magische Welt von Meridianis",
       "subtitle-1": "Streife alleine oder gemeinsam mit anderen Spielern durch das Land, durchquere Ebenen, erklimme Berge oder erforsche dunkle Wälder."
     }
+  },
+  "navigation": {
+    "home": "Home",
+    "review": "Reviews",
+    "team": "Team"
+  },
+  "login": {
+    "title": "Anmeldung",
+    "subtitle": "Melde dich an und leg los.",
+    "form-email": "Email",
+    "form-password": "Kennwort"
+  },
+  "registration": {
+    "title": "Registrierung",
+    "subtitle": "Erstelle deinen Account.",
+    "form-email": "Email",
+    "form-password": "Kennwort"
   }
 }
