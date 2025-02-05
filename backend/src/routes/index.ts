@@ -15,6 +15,8 @@ const router = express.Router();
  */
 router.use('/monsters', monsters);
 router.use('/auth', auth);
+router.get('/login', getStatus);
 router.get('/status', getStatus);
+
 
 export default router;
